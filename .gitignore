@@ -7,6 +7,7 @@
 
 # Yapı (Build) Dosyaları (Bin ve Obj Takipte Kalabilir)
 bin/
+obj/
 
 # Kullanıcıya Özgü Dosyalar
 *.ide*

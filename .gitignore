@@ -4,17 +4,9 @@
 *.suo
 *.cache
 *.log
-*.csproj.user
 
-# Yapı (Build) Dosyaları
+# Yapı (Build) Dosyaları (Bin ve Obj Takipte Kalabilir)
 bin/
-obj/
-
-# Yayın Dosyaları
-*.publish/
-*.exe
-*.dll
-*.pdb
 
 # Kullanıcıya Özgü Dosyalar
 *.ide*
@@ -22,8 +14,10 @@ obj/
 *.bak
 *.tmp
 
-# ASP.NET İçin
-wwwroot/
+# ASP.NET için
+# wwwroot'u tamamen ignore etmek yerine altındaki geçici dosyaları ignore edebilirsiniz
+wwwroot/**/*.log
+wwwroot/**/*.tmp
 
-# Config Dosyaları
+# Geliştirme Ayarları
 appsettings.Development.json

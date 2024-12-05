@@ -1,0 +1,11 @@
+generalSettings-> id(pk, ai)*, name*, description, logoUrl, seoTitle, seoDescription, keywords
+availableTime -> id(pk, ai)*, dayIndex*, startTime*, endTime*
+slider-> id(pk, ai)*, imageUrl*, title, description
+employee-> id(pk, ai)*, name*, surname*, profileImageUrl*, idNumber* , iban*, basicWage*, password*
+skill-> id(pk, ai)*, title*, description*, price*, bonus*, duration*, cost*, isVisible*
+employeeSkillLinked-> id(pk, ai)*, personelId(fk)*, skillIdpersonelId(fk)*
+customer-> id(pk, ai)*, name*, surname*, email*, phoneNumber*, birthDay*
+appointmentStatus-> id(pk, ai)*, name*, description -> holiday | Approval Waited | approved | rejected | completed
+appointment -> id(pk, ai)*, personelIdpersonelId(fk)*, customerIdpersonelId(fk)*, skillId*, statusId*, date*
+invoice -> id(pk, ai)*, appointmenIdpersonelId(fk)*, tipAmount
+

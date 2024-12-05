@@ -1,0 +1,29 @@
+# Visual Studio için
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+*.csproj.user
+
+# Yapı (Build) Dosyaları
+bin/
+obj/
+
+# Yayın Dosyaları
+*.publish/
+*.exe
+*.dll
+*.pdb
+
+# Kullanıcıya Özgü Dosyalar
+*.ide*
+*.swp
+*.bak
+*.tmp
+
+# ASP.NET İçin
+wwwroot/
+
+# Config Dosyaları
+appsettings.Development.json

@@ -2,14 +2,16 @@
 {
     public class Skill
     {
-        public required int Id { get; set; } // PK, AI
-        public required string Title { get; set; } // *
-        public required string Description { get; set; } // *
-        public required decimal Price { get; set; } // *
-        public required decimal Bonus { get; set; } // *
-        public required int Duration { get; set; } // *
-        public required decimal Cost { get; set; } // *
-        public required bool IsVisible { get; set; } // *
-    }
+        public int Id { get; set; } // PK
+        public string Title { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public decimal Price { get; set; }
+        public decimal Bonus { get; set; }
+        public int Duration { get; set; }
+        public decimal Cost { get; set; }
+        public bool IsVisible { get; set; }
 
+        // Employees ile ilişki
+        public ICollection<Employee> Employees { get; set; } = new List<Employee>();
+    }
 }

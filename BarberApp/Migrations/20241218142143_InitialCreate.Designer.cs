@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BarberApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241205141838_InitialCreate")]
+    [Migration("20241218142143_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -177,32 +177,19 @@ namespace BarberApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Employees");
-                });
 
-            modelBuilder.Entity("BarberApp.Models.EmployeeSkillLinked", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("EmployeeId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("PersonelId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("SkillId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("EmployeeId");
-
-                    b.HasIndex("SkillId");
-
-                    b.ToTable("EmployeeSkillLinkeds");
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            BasicWage = 5000m,
+                            Iban = "TR000000000000000000000000",
+                            IdNumber = "00000000000",
+                            Name = "Admin",
+                            Password = "admin123",
+                            ProfileImageUrl = "default.png",
+                            Surname = "User"
+                        });
                 });
 
             modelBuilder.Entity("BarberApp.Models.GeneralSettings", b =>
@@ -284,6 +271,9 @@ namespace BarberApp.Migrations
                     b.Property<int>("Duration")
                         .HasColumnType("integer");
 
+                    b.Property<int?>("EmployeeId")
+                        .HasColumnType("integer");
+
                     b.Property<bool>("IsVisible")
                         .HasColumnType("boolean");
 
@@ -296,7 +286,22 @@ namespace BarberApp.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("EmployeeId");
+
                     b.ToTable("Skills");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Bonus = 0m,
+                            Cost = 0m,
+                            Description = "Administrator Role",
+                            Duration = 0,
+                            IsVisible = true,
+                            Price = 0m,
+                            Title = "ADMIN"
+                        });
                 });
 
             modelBuilder.Entity("BarberApp.Models.Slider", b =>
@@ -359,25 +364,6 @@ namespace BarberApp.Migrations
                     b.Navigation("Status");
                 });
 
-            modelBuilder.Entity("BarberApp.Models.EmployeeSkillLinked", b =>
-                {
-                    b.HasOne("BarberApp.Models.Employee", "Employee")
-                        .WithMany()
-                        .HasForeignKey("EmployeeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("BarberApp.Models.Skill", "Skill")
-                        .WithMany()
-                        .HasForeignKey("SkillId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Employee");
-
-                    b.Navigation("Skill");
-                });
-
             modelBuilder.Entity("BarberApp.Models.Invoice", b =>
                 {
                     b.HasOne("BarberApp.Models.Appointment", "Appointment")
@@ -387,6 +373,18 @@ namespace BarberApp.Migrations
                         .IsRequired();
 
                     b.Navigation("Appointment");
+                });
+
+            modelBuilder.Entity("BarberApp.Models.Skill", b =>
+                {
+                    b.HasOne("BarberApp.Models.Employee", null)
+                        .WithMany("Skills")
+                        .HasForeignKey("EmployeeId");
+                });
+
+            modelBuilder.Entity("BarberApp.Models.Employee", b =>
+                {
+                    b.Navigation("Skills");
                 });
 #pragma warning restore 612, 618
         }

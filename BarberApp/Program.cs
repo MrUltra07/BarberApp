@@ -1,30 +1,40 @@
 using BarberApp.Models;
-using Microsoft.EntityFrameworkCore; // DbContext için gerekli
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services to the container
 builder.Services.AddControllersWithViews();
 
-// Veritabaný baðlantýsý ekleniyor
+// Add DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))); // PostgreSQL baðlantýsý
+
+// Add Authentication and Authorization
+builder.Services.AddAuthentication("SessionScheme")
+    .AddCookie("SessionScheme", options =>
+    {
+        options.LoginPath = "/admin/login"; // Giriþ sayfasý
+        options.AccessDeniedPath = "/admin/accessdenied"; // Yetkisiz eriþim sayfasý
+    });
+
+// Add Session Middleware
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Oturum süresi
+    options.Cookie.HttpOnly = true;                // Güvenlik için HTTPOnly cookie
+    options.Cookie.IsEssential = true;             // GDPR için gerekli
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-    app.UseHsts();
-}
-
-app.UseHttpsRedirection();
+// Configure the HTTP request pipeline
 app.UseStaticFiles();
-
 app.UseRouting();
 
-app.UseAuthorization();
+app.UseSession();        // Session middleware
+app.UseAuthentication(); // Authentication middleware
+app.UseAuthorization();  // Authorization middleware
 
 app.MapControllerRoute(
     name: "default",

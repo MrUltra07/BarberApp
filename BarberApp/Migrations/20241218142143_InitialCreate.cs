@@ -96,25 +96,6 @@ namespace BarberApp.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Skills",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Title = table.Column<string>(type: "text", nullable: false),
-                    Description = table.Column<string>(type: "text", nullable: false),
-                    Price = table.Column<decimal>(type: "numeric", nullable: false),
-                    Bonus = table.Column<decimal>(type: "numeric", nullable: false),
-                    Duration = table.Column<int>(type: "integer", nullable: false),
-                    Cost = table.Column<decimal>(type: "numeric", nullable: false),
-                    IsVisible = table.Column<bool>(type: "boolean", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Skills", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Sliders",
                 columns: table => new
                 {
@@ -127,6 +108,31 @@ namespace BarberApp.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Sliders", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Skills",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Title = table.Column<string>(type: "text", nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: false),
+                    Price = table.Column<decimal>(type: "numeric", nullable: false),
+                    Bonus = table.Column<decimal>(type: "numeric", nullable: false),
+                    Duration = table.Column<int>(type: "integer", nullable: false),
+                    Cost = table.Column<decimal>(type: "numeric", nullable: false),
+                    IsVisible = table.Column<bool>(type: "boolean", nullable: false),
+                    EmployeeId = table.Column<int>(type: "integer", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Skills", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Skills_Employees_EmployeeId",
+                        column: x => x.EmployeeId,
+                        principalTable: "Employees",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -172,33 +178,6 @@ namespace BarberApp.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "EmployeeSkillLinkeds",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    PersonelId = table.Column<int>(type: "integer", nullable: false),
-                    SkillId = table.Column<int>(type: "integer", nullable: false),
-                    EmployeeId = table.Column<int>(type: "integer", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_EmployeeSkillLinkeds", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_EmployeeSkillLinkeds_Employees_EmployeeId",
-                        column: x => x.EmployeeId,
-                        principalTable: "Employees",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_EmployeeSkillLinkeds_Skills_SkillId",
-                        column: x => x.SkillId,
-                        principalTable: "Skills",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Invoices",
                 columns: table => new
                 {
@@ -217,6 +196,16 @@ namespace BarberApp.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Employees",
+                columns: new[] { "Id", "BasicWage", "Iban", "IdNumber", "Name", "Password", "ProfileImageUrl", "Surname" },
+                values: new object[] { 1, 5000m, "TR000000000000000000000000", "00000000000", "Admin", "admin123", "default.png", "User" });
+
+            migrationBuilder.InsertData(
+                table: "Skills",
+                columns: new[] { "Id", "Bonus", "Cost", "Description", "Duration", "EmployeeId", "IsVisible", "Price", "Title" },
+                values: new object[] { 1, 0m, 0m, "Administrator Role", 0, null, true, 0m, "ADMIN" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Appointments_CustomerId",
@@ -239,19 +228,14 @@ namespace BarberApp.Migrations
                 column: "StatusId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_EmployeeSkillLinkeds_EmployeeId",
-                table: "EmployeeSkillLinkeds",
-                column: "EmployeeId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_EmployeeSkillLinkeds_SkillId",
-                table: "EmployeeSkillLinkeds",
-                column: "SkillId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Invoices_AppointmentId",
                 table: "Invoices",
                 column: "AppointmentId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Skills_EmployeeId",
+                table: "Skills",
+                column: "EmployeeId");
         }
 
         /// <inheritdoc />
@@ -259,9 +243,6 @@ namespace BarberApp.Migrations
         {
             migrationBuilder.DropTable(
                 name: "AvailableTimes");
-
-            migrationBuilder.DropTable(
-                name: "EmployeeSkillLinkeds");
 
             migrationBuilder.DropTable(
                 name: "GeneralSettings");
@@ -282,10 +263,10 @@ namespace BarberApp.Migrations
                 name: "Customers");
 
             migrationBuilder.DropTable(
-                name: "Employees");
+                name: "Skills");
 
             migrationBuilder.DropTable(
-                name: "Skills");
+                name: "Employees");
         }
     }
 }

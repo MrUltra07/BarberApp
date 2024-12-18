@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Admin Dashboard";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center">Admin Panel</h1>
+    <p class="text-success text-center">Bu sayfayı sadece Admin görebilir!</p>
+
+    <table class="table table-striped mt-4">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Skills</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var admin in ViewBag.AdminDetails)
+            {
+                <tr>
+                    <td>@admin.Name</td>
+                    <td>@admin.Surname</td>
+                    <td>
+                        @foreach (var skill in admin.Skills)
+                        {
+                            <span class="badge bg-primary">@skill</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

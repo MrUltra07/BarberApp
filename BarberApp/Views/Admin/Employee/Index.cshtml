@@ -1,0 +1,101 @@
+﻿@model IEnumerable<BarberApp.Models.Employee>
+
+@{
+    ViewData["Title"] = "Employee List";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+    // Notification setup
+    var status = Context.Request?.Query["status"].FirstOrDefault();
+    var message = Context.Request?.Query["message"].FirstOrDefault();
+}
+@{
+    // Renk seçenekleri dizisi
+    var colorOptions = new[] { "primary", "secondary", "success", "danger", "warning", "info", "dark", "light" };
+    
+}
+
+@if (!string.IsNullOrEmpty(status) && !string.IsNullOrEmpty(message))
+{
+    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1050;">
+        <div class="toast align-items-center text-bg-@(status == "ok" ? "success" : "danger") border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    @message
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var toastElList = [].slice.call(document.querySelectorAll('.toast'));
+        var toastList = toastElList.map(function (toastEl) {
+            return new bootstrap.Toast(toastEl);
+        });
+        toastList.forEach(toast => toast.show());
+    </script>
+}
+
+<h1 class="mt-4">Employee List</h1>
+
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Profile Image</th>
+            <th>ID Number</th>
+            <th>IBAN</th>
+            <th>Basic Wage</th>
+            <th>Skills</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var employee in Model)
+            {
+                @int index = 0; // Sayaç
+                <tr>
+                    <td>@employee.Id</td>
+                    <td>@employee.Name</td>
+                    <td>@employee.Surname</td>
+                    <td><img src="@employee.ProfileImageUrl" alt="Profile" width="50"></td>
+                    <td>@employee.IdNumber</td>
+                    <td>@employee.Iban</td>
+                    <td>@employee.BasicWage</td>
+                    <td>
+                        @if (employee.Skills != null && employee.Skills.Any())
+                        {
+                            @foreach (var skill in employee.Skills)
+                            {
+                                // Renk seçeneklerini sırayla kullanmak için mod alıyoruz
+                                var badgeClass = colorOptions[index % colorOptions.Length];
+                                index++;
+
+                                <span class="badge bg-@badgeClass">@skill.Title</span>
+                            }
+                        }
+                        else
+                        {
+                            <span class="badge bg-dark">no Skills</span>
+                        }
+                    </td>
+                    <td>
+                        <a href="/admin/employees/edit/@employee.Id" class="btn btn-primary btn-sm">Edit</a>
+                        <a href="/admin/employees/delete/@employee.Id" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="9" class="text-center">No employees found.</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/admin/employees/create" class="btn btn-success">Add New Employee</a>

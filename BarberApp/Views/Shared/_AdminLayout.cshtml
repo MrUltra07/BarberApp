@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #sidebar {
+            width: 250px;
+            height: 100%;
+            background-color: #343a40;
+            color: white;
+            flex-shrink: 0;
+        }
+        #sidebar .nav-link {
+            color: #adb5bd;
+        }
+        #sidebar .nav-link:hover {
+            color: white;
+        }
+        #content {
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+        #topbar {
+            background-color: #343a40;
+            color: white;
+        }
+        #topbar .navbar-brand {
+            color: white;
+        }
+        #topbar .navbar-brand:hover {
+            color: #adb5bd;
+        }
+    </style>
+</head>
+<body>
+    @if (TempData["Status"] != null && TempData["Message"] != null)
+    {
+        var status = TempData["Status"].ToString();
+        var message = TempData["Message"].ToString();
+        <div class="alert @(status == "ok" ? "alert-success" : "alert-danger")" role="alert">
+            @message
+        </div>
+    }
+    @if (TempData["Errors"] != null)
+    {
+        <div class="alert alert-danger">
+            <strong>Validation Errors:</strong>
+            <ul>
+                @foreach (var error in TempData["Errors"].ToString().Split("<br>"))
+                {
+                    <li>@Html.Raw(error)</li>
+                }
+            </ul>
+        </div>
+    }
+
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="d-flex flex-column">
+        <h4 class="text-center py-3">Admin Panel</h4>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/dashboard">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/employees">Employee</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/users">Users</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/reports">Reports</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content" class="d-flex flex-column">
+        <!-- Topbar -->
+        <nav id="topbar" class="navbar navbar-expand navbar-dark px-3">
+            <button class="btn btn-outline-light me-3" id="toggleSidebar">☰</button>
+            <a class="navbar-brand" href="/admin/dashboard">Admin Panel</a>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Profile
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                        <li><a class="dropdown-item" href="/admin/profile">My Profile</a></li>
+                        <li><a class="dropdown-item" href="/admin/logout">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container-fluid mt-4">
+            @RenderBody()
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const toggleSidebarButton = document.getElementById('toggleSidebar');
+        const sidebar = document.getElementById('sidebar');
+
+        toggleSidebarButton.addEventListener('click', () => {
+            sidebar.classList.toggle('d-none');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿@model BarberApp.Models.Skill
+
+@{
+    ViewData["Title"] = "Edit Skill";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Edit Skill</h1>
+<form method="post" action="/admin/skills/edit/@Model.Id">
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="Title" value="@Model.Title" required>
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" name="Description" rows="3">@Model.Description</textarea>
+    </div>
+    <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <input type="number" class="form-control" id="price" name="Price" value="@Model.Price" required>
+    </div>
+    <div class="mb-3">
+        <label for="bonus" class="form-label">Bonus</label>
+        <input type="number" class="form-control" id="bonus" name="Bonus" value="@Model.Bonus" required>
+    </div>
+    <div class="mb-3">
+        <label for="duration" class="form-label">Duration (minutes)</label>
+        <input type="number" class="form-control" id="duration" name="Duration" value="@Model.Duration" required>
+    </div>
+    <div class="mb-3">
+        <label for="cost" class="form-label">Cost</label>
+        <input type="number" class="form-control" id="cost" name="Cost" value="@Model.Cost" required>
+    </div>
+    <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="isVisible" name="IsVisible" @(Model.IsVisible ? "checked" : "")>
+        <label class="form-check-label" for="isVisible">Is Visible</label>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+    <a href="/admin/skills" class="btn btn-secondary">Cancel</a>
+</form>

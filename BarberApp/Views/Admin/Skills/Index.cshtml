@@ -1,0 +1,54 @@
+﻿@model IEnumerable<BarberApp.Models.Skill>
+
+@{
+    ViewData["Title"] = "Skill List";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1 class="mt-4">Skill List</h1>
+
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Bonus</th>
+            <th>Duration</th>
+            <th>Cost</th>
+            <th>Is Visible</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var skill in Model)
+            {
+                <tr>
+                    <td>@skill.Id</td>
+                    <td>@skill.Title</td>
+                    <td>@skill.Description</td>
+                    <td>@skill.Price</td>
+                    <td>@skill.Bonus</td>
+                    <td>@skill.Duration</td>
+                    <td>@skill.Cost</td>
+                    <td>@(skill.IsVisible ? "Yes" : "No")</td>
+                    <td>
+                        <a href="/admin/skills/edit/@skill.Id" class="btn btn-primary btn-sm">Edit</a>
+                        <a href="/admin/skills/delete/@skill.Id" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="9" class="text-center">No skills found.</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/admin/skills/create" class="btn btn-success">Add New Skill</a>

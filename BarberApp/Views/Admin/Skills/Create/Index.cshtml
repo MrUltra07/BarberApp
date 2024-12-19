@@ -1,0 +1,48 @@
+﻿@model BarberApp.Models.Skill
+
+@{
+    ViewData["Title"] = "Create Skill";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1 class="mt-4">Create New Skill</h1>
+
+<form method="post" action="/admin/skills/create">
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="Title" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" name="Description" rows="3" required></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <input type="number" class="form-control" id="price" name="Price" step="0.01" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="bonus" class="form-label">Bonus</label>
+        <input type="number" class="form-control" id="bonus" name="Bonus" step="0.01" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="duration" class="form-label">Duration (minutes)</label>
+        <input type="number" class="form-control" id="duration" name="Duration" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="cost" class="form-label">Cost</label>
+        <input type="number" class="form-control" id="cost" name="Cost" step="0.01" required>
+    </div>
+
+    <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="isVisible" name="IsVisible">
+        <label class="form-check-label" for="isVisible">Is Visible</label>
+    </div>
+
+    <button type="submit" class="btn btn-success">Create</button>
+    <a href="/admin/skills" class="btn btn-secondary">Cancel</a>
+</form>

@@ -17,87 +17,93 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BarberApp
 build_property.RootNamespace = BarberApp
-build_property.ProjectDir = C:\Users\Murat\Documents\Sau_Ders\webProgramlama\BerberApp\BarberApp\
+build_property.ProjectDir = C:\Users\Ahmet Safa\Desktop\WebOdev\BarberApp\BarberApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Murat\Documents\Sau_Ders\webProgramlama\BerberApp\BarberApp
+build_property.MSBuildProjectDirectory = C:\Users\Ahmet Safa\Desktop\WebOdev\BarberApp\BarberApp
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Account/Login.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Admin/Dashboard/Index.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Admin/Employee/Create/Index.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Employee/Create/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRW1wbG95ZWVcQ3JlYXRlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Admin/Employee/Edit/Index.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Employee/Edit/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRW1wbG95ZWVcRWRpdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Admin/Employee/Index.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Admin/Login/Index.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Admin/Skills/Create/Index.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Skills/Create/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2tpbGxzXENyZWF0ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Admin/Skills/Edit/Index.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Skills/Edit/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2tpbGxzXEVkaXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Admin/Skills/Index.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Skills/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2tpbGxzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Home/Index.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Home/Privacy.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Index.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Login.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Shared/Error.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/_ViewImports.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Slider/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xpZGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/_ViewStart.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Murat/Documents/Sau_Ders/webProgramlama/BerberApp/BarberApp/Views/Shared/_Layout.cshtml]
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-pyv2hrmhw2

@@ -237,7 +237,7 @@ namespace BarberApp.Migrations
                 table: "Skills",
                 column: "EmployeeId");
         }
-
+        
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {

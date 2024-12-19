@@ -40,7 +40,7 @@ namespace BarberApp.Controllers
                 if (employee == null)
                 {
                     ViewBag.ErrorMessage = "Geçersiz kimlik bilgileri.";
-                    return View("Login");
+                    return View("Login/Index");
                 }
                 Console.WriteLine("deneme");
                 Console.WriteLine(password, idNumber);

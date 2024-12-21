@@ -1,26 +1,37 @@
-﻿@model List<string>
+﻿@model List<BarberApp.Models.Slider> 
 
 @{
-    Layout = "_Layout";
+    ViewData["Title"] = "Slider";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        @foreach (var image in Model)
+<h1 class="mt-4">Welcome to Our Slider</h1>
+
+<!-- Bootstrap Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        @for (int i = 0; i < Model.Count; i++)
         {
-            <div class="carousel-item @if (image == Model.First()) {
-        <text>active</text>
- }">
-                <img src="@image" class="d-block w-100 img-fluid" alt="Slider Image">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="@i" class="@(i == 0 ? "active" : "")" aria-current="true" aria-label="Slide @i"></button>
+        }
+    </div>
+    <div class="carousel-inner">
+        @foreach (var slider in Model)
+        {
+            <div class="carousel-item @(Model.IndexOf(slider) == 0 ? "active" : "")">
+                <img src="@slider.ImageUrl" class="d-block w-100" alt="@slider.Title">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>@slider.Title</h5>
+                    <p>@slider.Description</p>
+                </div>
             </div>
         }
     </div>
-    <!-- Previous and Next controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>

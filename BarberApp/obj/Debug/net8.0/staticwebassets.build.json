@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2wEwtRoJQMtd7jcaNYNXscvLf+xZTwo3FjucMG0nwPg=",
+  "Hash": "k0+CTje7V4I8vUFafa7jlJ/Udj6KhBdJct6/PM6FrUc=",
   "Source": "BarberApp",
   "BasePath": "_content/BarberApp",
   "Mode": "Default",
@@ -1359,6 +1359,657 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\0bfb8b8e-c5d4-438e-aebb-0b6136809068.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/0bfb8b8e-c5d4-438e-aebb-0b6136809068#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xe75db5i4p",
+      "Integrity": "yb3JbPgqXtQQRyp4XBtW+KITbdmdWtFFT+C5POw92k8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\0bfb8b8e-c5d4-438e-aebb-0b6136809068.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\0e3f84f1-2548-4376-9f53-fa23772c342b.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/0e3f84f1-2548-4376-9f53-fa23772c342b#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ak1ayv60f3",
+      "Integrity": "asRtYuDP0wRS4XTsDGAtEFBTNKCsoqpil347O/U/9KY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\0e3f84f1-2548-4376-9f53-fa23772c342b.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\1dceace3-b914-4a49-83b2-e846195a59d0.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/1dceace3-b914-4a49-83b2-e846195a59d0#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ak1ayv60f3",
+      "Integrity": "asRtYuDP0wRS4XTsDGAtEFBTNKCsoqpil347O/U/9KY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\1dceace3-b914-4a49-83b2-e846195a59d0.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\2a756f84-9cfa-4a3d-9fdf-b12484e02066.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/2a756f84-9cfa-4a3d-9fdf-b12484e02066#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hyivoi59l3",
+      "Integrity": "R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\2a756f84-9cfa-4a3d-9fdf-b12484e02066.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\42d3cb06-aecc-4059-8b40-738e71dbeb82.jpg",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/42d3cb06-aecc-4059-8b40-738e71dbeb82#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hdzw6ka84m",
+      "Integrity": "6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\42d3cb06-aecc-4059-8b40-738e71dbeb82.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\59ab0ddb-b074-4da4-b2fa-c0fa9394073d.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/59ab0ddb-b074-4da4-b2fa-c0fa9394073d#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xe75db5i4p",
+      "Integrity": "yb3JbPgqXtQQRyp4XBtW+KITbdmdWtFFT+C5POw92k8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\59ab0ddb-b074-4da4-b2fa-c0fa9394073d.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\59cf2900-ffe9-4090-a80d-f77bfa3e58ef.jpg",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/59cf2900-ffe9-4090-a80d-f77bfa3e58ef#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wkxjty4x6r",
+      "Integrity": "QEo8C1WDh5i7GXeq8Yz4oHH94GWYPZDtVqMWGEq/MKo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\59cf2900-ffe9-4090-a80d-f77bfa3e58ef.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\5a34c5ba-2614-4737-bdc3-59fdecdd83f5.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/5a34c5ba-2614-4737-bdc3-59fdecdd83f5#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5z55f22iuc",
+      "Integrity": "f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\5a34c5ba-2614-4737-bdc3-59fdecdd83f5.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\5ea977dd-0e7e-47be-b9fb-e14efda5b328.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/5ea977dd-0e7e-47be-b9fb-e14efda5b328#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5z55f22iuc",
+      "Integrity": "f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\5ea977dd-0e7e-47be-b9fb-e14efda5b328.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\6386cee6-4c21-4e33-ab7a-846d5afd6933.jpg",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/6386cee6-4c21-4e33-ab7a-846d5afd6933#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hdzw6ka84m",
+      "Integrity": "6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\6386cee6-4c21-4e33-ab7a-846d5afd6933.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\7524be4b-f681-4eec-bc70-07e70bdbd8c7.jpg",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/7524be4b-f681-4eec-bc70-07e70bdbd8c7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hdzw6ka84m",
+      "Integrity": "6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\7524be4b-f681-4eec-bc70-07e70bdbd8c7.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\7d6b50be-6bda-4f16-9f26-dd6884df0c15.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/7d6b50be-6bda-4f16-9f26-dd6884df0c15#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5z55f22iuc",
+      "Integrity": "f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\7d6b50be-6bda-4f16-9f26-dd6884df0c15.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\7ec7d807-5029-4859-ad8f-b30abc1180ad.jpg",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/7ec7d807-5029-4859-ad8f-b30abc1180ad#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hdzw6ka84m",
+      "Integrity": "6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\7ec7d807-5029-4859-ad8f-b30abc1180ad.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\8e154b41-324d-438b-afc1-fc53638952bd.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/8e154b41-324d-438b-afc1-fc53638952bd#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hyivoi59l3",
+      "Integrity": "R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\8e154b41-324d-438b-afc1-fc53638952bd.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\91333ade-358e-45fc-9b92-d69e685f302e.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/91333ade-358e-45fc-9b92-d69e685f302e#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5z55f22iuc",
+      "Integrity": "f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\91333ade-358e-45fc-9b92-d69e685f302e.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\962e4def-5c16-45f4-8e21-7bab57e0657d.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/962e4def-5c16-45f4-8e21-7bab57e0657d#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5z55f22iuc",
+      "Integrity": "f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\962e4def-5c16-45f4-8e21-7bab57e0657d.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\9c9fd06a-2320-4ac1-8a76-295bbd791f7a.jpg",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/9c9fd06a-2320-4ac1-8a76-295bbd791f7a#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wkxjty4x6r",
+      "Integrity": "QEo8C1WDh5i7GXeq8Yz4oHH94GWYPZDtVqMWGEq/MKo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\9c9fd06a-2320-4ac1-8a76-295bbd791f7a.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\a02f98a0-67c6-498c-b1a9-d346e7a73c8b.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/a02f98a0-67c6-498c-b1a9-d346e7a73c8b#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hyivoi59l3",
+      "Integrity": "R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\a02f98a0-67c6-498c-b1a9-d346e7a73c8b.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\a16ff179-043b-4ae5-bc8a-9ff3f2da21a4.jpg",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/a16ff179-043b-4ae5-bc8a-9ff3f2da21a4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hdzw6ka84m",
+      "Integrity": "6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\a16ff179-043b-4ae5-bc8a-9ff3f2da21a4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\b7491b4b-d872-4d15-a5f2-476145cb1f6b.jpg",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/b7491b4b-d872-4d15-a5f2-476145cb1f6b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hdzw6ka84m",
+      "Integrity": "6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\b7491b4b-d872-4d15-a5f2-476145cb1f6b.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\bb6bcf43-671c-432d-a601-e9075ee9c719.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/bb6bcf43-671c-432d-a601-e9075ee9c719#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hyivoi59l3",
+      "Integrity": "R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\bb6bcf43-671c-432d-a601-e9075ee9c719.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\bdecf71e-5b62-42de-b42a-2f8ccfc6b774.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/bdecf71e-5b62-42de-b42a-2f8ccfc6b774#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hyivoi59l3",
+      "Integrity": "R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\bdecf71e-5b62-42de-b42a-2f8ccfc6b774.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\c9946c9e-3ba2-462b-b390-24634d0be8d1.jpg",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/c9946c9e-3ba2-462b-b390-24634d0be8d1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hdzw6ka84m",
+      "Integrity": "6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\c9946c9e-3ba2-462b-b390-24634d0be8d1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\c9fa977a-a23f-43d4-afec-be72fd8e61bc.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/c9fa977a-a23f-43d4-afec-be72fd8e61bc#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5z55f22iuc",
+      "Integrity": "f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\c9fa977a-a23f-43d4-afec-be72fd8e61bc.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\cef6ffc7-0563-43c2-88fb-48d55e45d3fb.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/cef6ffc7-0563-43c2-88fb-48d55e45d3fb#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5z55f22iuc",
+      "Integrity": "f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\cef6ffc7-0563-43c2-88fb-48d55e45d3fb.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\d65238e8-e535-4913-8dbb-3a0f74a5f418.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/d65238e8-e535-4913-8dbb-3a0f74a5f418#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4ustoa44dj",
+      "Integrity": "xAjbW2qmxyq5vgLh3L/2yfft0OAHsgM1AMxccke6ROY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\d65238e8-e535-4913-8dbb-3a0f74a5f418.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\da6595fa-da38-429d-9936-8255eb2af565.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/da6595fa-da38-429d-9936-8255eb2af565#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4ustoa44dj",
+      "Integrity": "xAjbW2qmxyq5vgLh3L/2yfft0OAHsgM1AMxccke6ROY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\da6595fa-da38-429d-9936-8255eb2af565.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\eadcde52-5d03-470c-9ec0-c6150beee238.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/eadcde52-5d03-470c-9ec0-c6150beee238#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hyivoi59l3",
+      "Integrity": "R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\eadcde52-5d03-470c-9ec0-c6150beee238.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\ec00aeda-3dc7-48b6-9aac-0ba6ead205a7.jpg",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/ec00aeda-3dc7-48b6-9aac-0ba6ead205a7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hdzw6ka84m",
+      "Integrity": "6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ec00aeda-3dc7-48b6-9aac-0ba6ead205a7.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\f1c57c87-d3af-4580-8324-c12fdd30ab9d.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/f1c57c87-d3af-4580-8324-c12fdd30ab9d#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5z55f22iuc",
+      "Integrity": "f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f1c57c87-d3af-4580-8324-c12fdd30ab9d.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\fe887f9e-e13c-4d1f-925c-cfb50ebf625b.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/fe887f9e-e13c-4d1f-925c-cfb50ebf625b#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xe75db5i4p",
+      "Integrity": "yb3JbPgqXtQQRyp4XBtW+KITbdmdWtFFT+C5POw92k8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\fe887f9e-e13c-4d1f-925c-cfb50ebf625b.png"
     }
   ],
   "Endpoints": [
@@ -1385,7 +2036,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1422,7 +2073,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1459,7 +2110,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1504,7 +2155,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1549,7 +2200,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1594,7 +2245,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1631,7 +2282,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1676,7 +2327,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1713,7 +2364,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 21:11:06 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1758,7 +2409,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 21:11:06 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1795,7 +2446,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 21:11:17 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1840,7 +2491,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 21:11:17 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1877,7 +2528,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1914,7 +2565,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1959,7 +2610,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1996,7 +2647,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2041,7 +2692,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2078,7 +2729,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2123,7 +2774,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2160,7 +2811,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2205,7 +2856,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2242,7 +2893,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2287,7 +2938,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2324,7 +2975,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2369,7 +3020,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2406,7 +3057,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2451,7 +3102,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2496,7 +3147,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2533,7 +3184,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2578,7 +3229,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2615,7 +3266,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2652,7 +3303,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2689,7 +3340,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2734,7 +3385,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2779,7 +3430,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2816,7 +3467,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2861,7 +3512,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2898,7 +3549,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2943,7 +3594,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2980,7 +3631,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3025,7 +3676,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3062,7 +3713,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3107,7 +3758,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3144,7 +3795,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3181,7 +3832,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3226,7 +3877,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3271,7 +3922,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3308,7 +3959,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3353,7 +4004,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3390,7 +4041,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3427,7 +4078,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3464,7 +4115,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3509,7 +4160,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3554,7 +4205,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3599,7 +4250,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3644,7 +4295,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3681,7 +4332,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3726,7 +4377,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3763,7 +4414,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3800,7 +4451,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3837,7 +4488,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3882,7 +4533,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3927,7 +4578,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3964,7 +4615,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4009,7 +4660,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4046,7 +4697,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4091,7 +4742,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4128,7 +4779,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4165,7 +4816,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4210,7 +4861,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4247,7 +4898,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4292,7 +4943,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4329,7 +4980,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4366,7 +5017,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4411,7 +5062,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4448,7 +5099,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4493,7 +5144,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4538,7 +5189,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4583,7 +5234,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4628,7 +5279,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4673,7 +5324,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4710,7 +5361,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4755,7 +5406,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4792,7 +5443,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4837,7 +5488,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4874,7 +5525,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4919,7 +5570,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4956,7 +5607,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4993,7 +5644,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5038,7 +5689,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5075,7 +5726,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5120,7 +5771,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5157,7 +5808,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5194,7 +5845,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5239,7 +5890,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5284,7 +5935,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5321,7 +5972,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5366,7 +6017,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5403,7 +6054,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5448,7 +6099,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5485,7 +6136,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5522,7 +6173,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5567,7 +6218,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5604,7 +6255,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5649,7 +6300,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5694,7 +6345,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5731,7 +6382,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5776,7 +6427,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5821,7 +6472,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5858,7 +6509,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5895,7 +6546,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5940,7 +6591,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5977,7 +6628,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6022,7 +6673,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6059,7 +6710,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6104,7 +6755,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6141,7 +6792,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6186,7 +6837,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6223,7 +6874,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6260,7 +6911,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6305,7 +6956,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6342,7 +6993,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6387,7 +7038,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6432,7 +7083,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6469,7 +7120,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6514,7 +7165,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6551,7 +7202,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6596,7 +7247,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 19:18:55 GMT"
+          "Value": "Sat, 21 Dec 2024 10:36:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6607,6 +7258,2548 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/0bfb8b8e-c5d4-438e-aebb-0b6136809068.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\0bfb8b8e-c5d4-438e-aebb-0b6136809068.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "531823"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yb3JbPgqXtQQRyp4XBtW+KITbdmdWtFFT+C5POw92k8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:19:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yb3JbPgqXtQQRyp4XBtW+KITbdmdWtFFT+C5POw92k8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/0bfb8b8e-c5d4-438e-aebb-0b6136809068.xe75db5i4p.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\0bfb8b8e-c5d4-438e-aebb-0b6136809068.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "531823"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yb3JbPgqXtQQRyp4XBtW+KITbdmdWtFFT+C5POw92k8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:19:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xe75db5i4p"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/0bfb8b8e-c5d4-438e-aebb-0b6136809068.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yb3JbPgqXtQQRyp4XBtW+KITbdmdWtFFT+C5POw92k8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/0e3f84f1-2548-4376-9f53-fa23772c342b.ak1ayv60f3.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\0e3f84f1-2548-4376-9f53-fa23772c342b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80964"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"asRtYuDP0wRS4XTsDGAtEFBTNKCsoqpil347O/U/9KY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:18:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ak1ayv60f3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/0e3f84f1-2548-4376-9f53-fa23772c342b.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-asRtYuDP0wRS4XTsDGAtEFBTNKCsoqpil347O/U/9KY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/0e3f84f1-2548-4376-9f53-fa23772c342b.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\0e3f84f1-2548-4376-9f53-fa23772c342b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80964"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"asRtYuDP0wRS4XTsDGAtEFBTNKCsoqpil347O/U/9KY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:18:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-asRtYuDP0wRS4XTsDGAtEFBTNKCsoqpil347O/U/9KY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/1dceace3-b914-4a49-83b2-e846195a59d0.ak1ayv60f3.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\1dceace3-b914-4a49-83b2-e846195a59d0.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80964"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"asRtYuDP0wRS4XTsDGAtEFBTNKCsoqpil347O/U/9KY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:17:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ak1ayv60f3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/1dceace3-b914-4a49-83b2-e846195a59d0.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-asRtYuDP0wRS4XTsDGAtEFBTNKCsoqpil347O/U/9KY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/1dceace3-b914-4a49-83b2-e846195a59d0.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\1dceace3-b914-4a49-83b2-e846195a59d0.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80964"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"asRtYuDP0wRS4XTsDGAtEFBTNKCsoqpil347O/U/9KY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:17:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-asRtYuDP0wRS4XTsDGAtEFBTNKCsoqpil347O/U/9KY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/2a756f84-9cfa-4a3d-9fdf-b12484e02066.hyivoi59l3.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\2a756f84-9cfa-4a3d-9fdf-b12484e02066.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:46:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hyivoi59l3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/2a756f84-9cfa-4a3d-9fdf-b12484e02066.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/2a756f84-9cfa-4a3d-9fdf-b12484e02066.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\2a756f84-9cfa-4a3d-9fdf-b12484e02066.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:46:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/42d3cb06-aecc-4059-8b40-738e71dbeb82.hdzw6ka84m.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\42d3cb06-aecc-4059-8b40-738e71dbeb82.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:42:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hdzw6ka84m"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/42d3cb06-aecc-4059-8b40-738e71dbeb82.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/42d3cb06-aecc-4059-8b40-738e71dbeb82.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\42d3cb06-aecc-4059-8b40-738e71dbeb82.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:42:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/59ab0ddb-b074-4da4-b2fa-c0fa9394073d.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\59ab0ddb-b074-4da4-b2fa-c0fa9394073d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "531823"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yb3JbPgqXtQQRyp4XBtW+KITbdmdWtFFT+C5POw92k8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:13:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yb3JbPgqXtQQRyp4XBtW+KITbdmdWtFFT+C5POw92k8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/59ab0ddb-b074-4da4-b2fa-c0fa9394073d.xe75db5i4p.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\59ab0ddb-b074-4da4-b2fa-c0fa9394073d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "531823"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yb3JbPgqXtQQRyp4XBtW+KITbdmdWtFFT+C5POw92k8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:13:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xe75db5i4p"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/59ab0ddb-b074-4da4-b2fa-c0fa9394073d.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yb3JbPgqXtQQRyp4XBtW+KITbdmdWtFFT+C5POw92k8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/59cf2900-ffe9-4090-a80d-f77bfa3e58ef.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\59cf2900-ffe9-4090-a80d-f77bfa3e58ef.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "655877"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QEo8C1WDh5i7GXeq8Yz4oHH94GWYPZDtVqMWGEq/MKo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:11:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QEo8C1WDh5i7GXeq8Yz4oHH94GWYPZDtVqMWGEq/MKo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/59cf2900-ffe9-4090-a80d-f77bfa3e58ef.wkxjty4x6r.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\59cf2900-ffe9-4090-a80d-f77bfa3e58ef.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "655877"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QEo8C1WDh5i7GXeq8Yz4oHH94GWYPZDtVqMWGEq/MKo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:11:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wkxjty4x6r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/59cf2900-ffe9-4090-a80d-f77bfa3e58ef.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QEo8C1WDh5i7GXeq8Yz4oHH94GWYPZDtVqMWGEq/MKo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/5a34c5ba-2614-4737-bdc3-59fdecdd83f5.5z55f22iuc.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\5a34c5ba-2614-4737-bdc3-59fdecdd83f5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:17:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5z55f22iuc"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/5a34c5ba-2614-4737-bdc3-59fdecdd83f5.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/5a34c5ba-2614-4737-bdc3-59fdecdd83f5.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\5a34c5ba-2614-4737-bdc3-59fdecdd83f5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:17:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/5ea977dd-0e7e-47be-b9fb-e14efda5b328.5z55f22iuc.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\5ea977dd-0e7e-47be-b9fb-e14efda5b328.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:16:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5z55f22iuc"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/5ea977dd-0e7e-47be-b9fb-e14efda5b328.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/5ea977dd-0e7e-47be-b9fb-e14efda5b328.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\5ea977dd-0e7e-47be-b9fb-e14efda5b328.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:16:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/6386cee6-4c21-4e33-ab7a-846d5afd6933.hdzw6ka84m.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\6386cee6-4c21-4e33-ab7a-846d5afd6933.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:40:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hdzw6ka84m"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/6386cee6-4c21-4e33-ab7a-846d5afd6933.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/6386cee6-4c21-4e33-ab7a-846d5afd6933.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\6386cee6-4c21-4e33-ab7a-846d5afd6933.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:40:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/7524be4b-f681-4eec-bc70-07e70bdbd8c7.hdzw6ka84m.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\7524be4b-f681-4eec-bc70-07e70bdbd8c7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:40:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hdzw6ka84m"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/7524be4b-f681-4eec-bc70-07e70bdbd8c7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/7524be4b-f681-4eec-bc70-07e70bdbd8c7.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\7524be4b-f681-4eec-bc70-07e70bdbd8c7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:40:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/7d6b50be-6bda-4f16-9f26-dd6884df0c15.5z55f22iuc.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\7d6b50be-6bda-4f16-9f26-dd6884df0c15.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:14:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5z55f22iuc"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/7d6b50be-6bda-4f16-9f26-dd6884df0c15.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/7d6b50be-6bda-4f16-9f26-dd6884df0c15.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\7d6b50be-6bda-4f16-9f26-dd6884df0c15.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:14:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/7ec7d807-5029-4859-ad8f-b30abc1180ad.hdzw6ka84m.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\7ec7d807-5029-4859-ad8f-b30abc1180ad.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:40:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hdzw6ka84m"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/7ec7d807-5029-4859-ad8f-b30abc1180ad.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/7ec7d807-5029-4859-ad8f-b30abc1180ad.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\7ec7d807-5029-4859-ad8f-b30abc1180ad.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:40:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/8e154b41-324d-438b-afc1-fc53638952bd.hyivoi59l3.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\8e154b41-324d-438b-afc1-fc53638952bd.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:07:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hyivoi59l3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/8e154b41-324d-438b-afc1-fc53638952bd.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/8e154b41-324d-438b-afc1-fc53638952bd.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\8e154b41-324d-438b-afc1-fc53638952bd.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:07:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/91333ade-358e-45fc-9b92-d69e685f302e.5z55f22iuc.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\91333ade-358e-45fc-9b92-d69e685f302e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:16:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5z55f22iuc"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/91333ade-358e-45fc-9b92-d69e685f302e.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/91333ade-358e-45fc-9b92-d69e685f302e.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\91333ade-358e-45fc-9b92-d69e685f302e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:16:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/962e4def-5c16-45f4-8e21-7bab57e0657d.5z55f22iuc.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\962e4def-5c16-45f4-8e21-7bab57e0657d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:17:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5z55f22iuc"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/962e4def-5c16-45f4-8e21-7bab57e0657d.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/962e4def-5c16-45f4-8e21-7bab57e0657d.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\962e4def-5c16-45f4-8e21-7bab57e0657d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:17:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9c9fd06a-2320-4ac1-8a76-295bbd791f7a.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\9c9fd06a-2320-4ac1-8a76-295bbd791f7a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "655877"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QEo8C1WDh5i7GXeq8Yz4oHH94GWYPZDtVqMWGEq/MKo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:13:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QEo8C1WDh5i7GXeq8Yz4oHH94GWYPZDtVqMWGEq/MKo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9c9fd06a-2320-4ac1-8a76-295bbd791f7a.wkxjty4x6r.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\9c9fd06a-2320-4ac1-8a76-295bbd791f7a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "655877"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QEo8C1WDh5i7GXeq8Yz4oHH94GWYPZDtVqMWGEq/MKo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:13:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wkxjty4x6r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/9c9fd06a-2320-4ac1-8a76-295bbd791f7a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QEo8C1WDh5i7GXeq8Yz4oHH94GWYPZDtVqMWGEq/MKo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a02f98a0-67c6-498c-b1a9-d346e7a73c8b.hyivoi59l3.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\a02f98a0-67c6-498c-b1a9-d346e7a73c8b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:45:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hyivoi59l3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/a02f98a0-67c6-498c-b1a9-d346e7a73c8b.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a02f98a0-67c6-498c-b1a9-d346e7a73c8b.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\a02f98a0-67c6-498c-b1a9-d346e7a73c8b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:45:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a16ff179-043b-4ae5-bc8a-9ff3f2da21a4.hdzw6ka84m.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\a16ff179-043b-4ae5-bc8a-9ff3f2da21a4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:07:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hdzw6ka84m"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/a16ff179-043b-4ae5-bc8a-9ff3f2da21a4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a16ff179-043b-4ae5-bc8a-9ff3f2da21a4.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\a16ff179-043b-4ae5-bc8a-9ff3f2da21a4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:07:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/b7491b4b-d872-4d15-a5f2-476145cb1f6b.hdzw6ka84m.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\b7491b4b-d872-4d15-a5f2-476145cb1f6b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:39:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hdzw6ka84m"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/b7491b4b-d872-4d15-a5f2-476145cb1f6b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/b7491b4b-d872-4d15-a5f2-476145cb1f6b.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\b7491b4b-d872-4d15-a5f2-476145cb1f6b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:39:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bb6bcf43-671c-432d-a601-e9075ee9c719.hyivoi59l3.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\bb6bcf43-671c-432d-a601-e9075ee9c719.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:46:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hyivoi59l3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/bb6bcf43-671c-432d-a601-e9075ee9c719.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bb6bcf43-671c-432d-a601-e9075ee9c719.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\bb6bcf43-671c-432d-a601-e9075ee9c719.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:46:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bdecf71e-5b62-42de-b42a-2f8ccfc6b774.hyivoi59l3.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\bdecf71e-5b62-42de-b42a-2f8ccfc6b774.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:42:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hyivoi59l3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/bdecf71e-5b62-42de-b42a-2f8ccfc6b774.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bdecf71e-5b62-42de-b42a-2f8ccfc6b774.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\bdecf71e-5b62-42de-b42a-2f8ccfc6b774.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:42:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/c9946c9e-3ba2-462b-b390-24634d0be8d1.hdzw6ka84m.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\c9946c9e-3ba2-462b-b390-24634d0be8d1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:11:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hdzw6ka84m"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/c9946c9e-3ba2-462b-b390-24634d0be8d1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/c9946c9e-3ba2-462b-b390-24634d0be8d1.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\c9946c9e-3ba2-462b-b390-24634d0be8d1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:11:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/c9fa977a-a23f-43d4-afec-be72fd8e61bc.5z55f22iuc.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\c9fa977a-a23f-43d4-afec-be72fd8e61bc.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:19:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5z55f22iuc"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/c9fa977a-a23f-43d4-afec-be72fd8e61bc.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/c9fa977a-a23f-43d4-afec-be72fd8e61bc.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\c9fa977a-a23f-43d4-afec-be72fd8e61bc.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:19:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/cef6ffc7-0563-43c2-88fb-48d55e45d3fb.5z55f22iuc.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\cef6ffc7-0563-43c2-88fb-48d55e45d3fb.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:20:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5z55f22iuc"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/cef6ffc7-0563-43c2-88fb-48d55e45d3fb.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/cef6ffc7-0563-43c2-88fb-48d55e45d3fb.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\cef6ffc7-0563-43c2-88fb-48d55e45d3fb.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:20:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/d65238e8-e535-4913-8dbb-3a0f74a5f418.4ustoa44dj.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\d65238e8-e535-4913-8dbb-3a0f74a5f418.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "687152"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xAjbW2qmxyq5vgLh3L/2yfft0OAHsgM1AMxccke6ROY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:11:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4ustoa44dj"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/d65238e8-e535-4913-8dbb-3a0f74a5f418.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xAjbW2qmxyq5vgLh3L/2yfft0OAHsgM1AMxccke6ROY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/d65238e8-e535-4913-8dbb-3a0f74a5f418.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\d65238e8-e535-4913-8dbb-3a0f74a5f418.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "687152"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xAjbW2qmxyq5vgLh3L/2yfft0OAHsgM1AMxccke6ROY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:11:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xAjbW2qmxyq5vgLh3L/2yfft0OAHsgM1AMxccke6ROY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/da6595fa-da38-429d-9936-8255eb2af565.4ustoa44dj.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\da6595fa-da38-429d-9936-8255eb2af565.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "687152"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xAjbW2qmxyq5vgLh3L/2yfft0OAHsgM1AMxccke6ROY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:46:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4ustoa44dj"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/da6595fa-da38-429d-9936-8255eb2af565.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xAjbW2qmxyq5vgLh3L/2yfft0OAHsgM1AMxccke6ROY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/da6595fa-da38-429d-9936-8255eb2af565.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\da6595fa-da38-429d-9936-8255eb2af565.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "687152"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xAjbW2qmxyq5vgLh3L/2yfft0OAHsgM1AMxccke6ROY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:46:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xAjbW2qmxyq5vgLh3L/2yfft0OAHsgM1AMxccke6ROY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/eadcde52-5d03-470c-9ec0-c6150beee238.hyivoi59l3.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\eadcde52-5d03-470c-9ec0-c6150beee238.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:13:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hyivoi59l3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/eadcde52-5d03-470c-9ec0-c6150beee238.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/eadcde52-5d03-470c-9ec0-c6150beee238.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\eadcde52-5d03-470c-9ec0-c6150beee238.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:13:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R16WPfa4sn/xT3UexiWhy69cCuyRjzHFg84GzrDgVu0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ec00aeda-3dc7-48b6-9aac-0ba6ead205a7.hdzw6ka84m.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\ec00aeda-3dc7-48b6-9aac-0ba6ead205a7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:42:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hdzw6ka84m"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ec00aeda-3dc7-48b6-9aac-0ba6ead205a7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ec00aeda-3dc7-48b6-9aac-0ba6ead205a7.jpg",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\ec00aeda-3dc7-48b6-9aac-0ba6ead205a7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216480"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:42:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6071a+7SkC/zfF0CJYc4V1l9lihuWZVV4Rx8NgzeWig="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f1c57c87-d3af-4580-8324-c12fdd30ab9d.5z55f22iuc.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\f1c57c87-d3af-4580-8324-c12fdd30ab9d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:17:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5z55f22iuc"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/f1c57c87-d3af-4580-8324-c12fdd30ab9d.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f1c57c87-d3af-4580-8324-c12fdd30ab9d.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\f1c57c87-d3af-4580-8324-c12fdd30ab9d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "779430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:17:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/uplXJEmTbbNBfK0zP6aGmzjxQ6xaN9gIqqVGAVre8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/fe887f9e-e13c-4d1f-925c-cfb50ebf625b.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\fe887f9e-e13c-4d1f-925c-cfb50ebf625b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "531823"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yb3JbPgqXtQQRyp4XBtW+KITbdmdWtFFT+C5POw92k8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:20:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yb3JbPgqXtQQRyp4XBtW+KITbdmdWtFFT+C5POw92k8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/fe887f9e-e13c-4d1f-925c-cfb50ebf625b.xe75db5i4p.png",
+      "AssetFile": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\fe887f9e-e13c-4d1f-925c-cfb50ebf625b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "531823"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yb3JbPgqXtQQRyp4XBtW+KITbdmdWtFFT+C5POw92k8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 12:20:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xe75db5i4p"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/fe887f9e-e13c-4d1f-925c-cfb50ebf625b.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yb3JbPgqXtQQRyp4XBtW+KITbdmdWtFFT+C5POw92k8="
         }
       ]
     }

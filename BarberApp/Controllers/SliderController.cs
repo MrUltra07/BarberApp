@@ -1,22 +1,31 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using BarberApp.Models;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace BarberApp.Controllers
 {
 	public class SliderController : Controller
 	{
+		private readonly AppDbContext _context;
+
+		public SliderController(AppDbContext context)
+		{
+			_context = context;
+		}
+
 		public IActionResult Index()
 		{
-			// Görsel dosyalarının olduğu dizin
-			string imagesFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
+			var sliders = _context.Sliders.ToList(); // Veritabanındaki sliderları çekiyoruz
 
-			// Görsellerin tam yollarını almak
-			var imageFiles = Directory.GetFiles(imagesFolder)
-									  .Where(file => file.EndsWith(".jpg") || file.EndsWith(".png") || file.EndsWith(".webp") || file.EndsWith(".jpeg"))
-									  .Select(file => "/images/" + Path.GetFileName(file))
-									  .ToList();
+			// Eğer slider verisi bulunmazsa, boş bir liste gönderelim
+			if (sliders == null)
+			{
+				sliders = new List<Slider>(); // Boş liste oluşturuyoruz
+			}
 
-			// Görselleri View'a iletmek
-			return View(imageFiles);
+			return View("Index",sliders); // Model'i view'a gönderiyoruz
 		}
+
 	}
 }

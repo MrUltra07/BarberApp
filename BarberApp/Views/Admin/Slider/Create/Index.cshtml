@@ -1,0 +1,59 @@
+﻿@using BarberApp.ViewModels
+@model SliderViewModel
+
+@{
+    ViewData["Title"] = "Create Slider";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1 class="mt-4">Create New Slider</h1>
+
+<form method="post" enctype="multipart/form-data" action="/admin/sliders/create">
+    <div class="mb-3">
+        <label for="imageFile" class="form-label">Upload Image</label>
+        <input type="file" class="form-control" id="imageFile" name="ImageFile" accept="image/*" required onchange="previewImage(event)">
+        <div class="mt-2">
+            <img id="imagePreview" style="max-width: 200px; height: auto; display: none;" />
+        </div>
+        @if (ViewData.ModelState.ContainsKey("ImageFile") && ViewData.ModelState["ImageFile"]?.Errors.Any() == true)
+        {
+            <div class="text-danger">@ViewData.ModelState["ImageFile"]?.Errors.FirstOrDefault()?.ErrorMessage</div>
+        }
+    </div>
+
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="Title" value="@Model.Title" required>
+        @if (ViewData.ModelState.ContainsKey("Title") && ViewData.ModelState["Title"]?.Errors.Any() == true)
+        {
+            <div class="text-danger">@ViewData.ModelState["Title"]?.Errors.FirstOrDefault()?.ErrorMessage</div>
+        }
+    </div>
+
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" name="Description" required>@Model.Description</textarea>
+        @if (ViewData.ModelState.ContainsKey("Description") && ViewData.ModelState["Description"]?.Errors.Any() == true)
+        {
+            <div class="text-danger">@ViewData.ModelState["Description"]?.Errors.FirstOrDefault()?.ErrorMessage</div>
+        }
+    </div>
+
+    <button type="submit" class="btn btn-success">Create</button>
+    <a href="/admin/sliders" class="btn btn-secondary">Cancel</a>
+</form>
+
+<script>
+    function previewImage(event) {
+        const input = event.target;
+        const preview = document.getElementById("imagePreview");
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                preview.src = e.target.result;
+                preview.style.display = "block";
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>

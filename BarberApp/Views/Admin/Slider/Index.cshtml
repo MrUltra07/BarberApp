@@ -1,0 +1,42 @@
+﻿@model List<BarberApp.Models.Slider>
+
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>#</th>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var slider in Model)
+            {
+                <tr>
+                    <td>@slider.Id</td>
+                    <td>
+                        <img src="@slider.ImageUrl" alt="Image" style="width: 100px; height: auto;">
+                    </td>
+                    <td>@slider.Title</td>
+                    <td>@slider.Description</td>
+                    <td>
+                        <a href="/admin/sliders/edit/@slider.Id" class="btn btn-primary btn-sm">Edit</a>
+                        <form method="post" action="/admin/sliders/delete/@slider.Id" style="display:inline;">
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5" class="text-center">No sliders found.</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/admin/sliders/create" class="btn btn-success">Add New Slider</a>

@@ -52,16 +52,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Skills/Create/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2tpbGxzXENyZWF0ZVxJbmRleC5jc2h0bWw=
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Skill/Create/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2tpbGxcQ3JlYXRlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Skills/Edit/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2tpbGxzXEVkaXRcSW5kZXguY3NodG1s
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Skill/Edit/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2tpbGxcRWRpdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Skills/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2tpbGxzXEluZGV4LmNzaHRtbA==
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Skill/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2tpbGxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Slider/Create/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2xpZGVyXENyZWF0ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Slider/Edit/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2xpZGVyXEVkaXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Admin/Slider/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2xpZGVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ahmet Safa/Desktop/WebOdev/BarberApp/BarberApp/Views/Home/Index.cshtml]

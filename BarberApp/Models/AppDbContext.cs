@@ -58,8 +58,51 @@ namespace BarberApp.Models
                     {
                         joinEntity.HasData(new { EmployeeId = 1, SkillId = 1 });
                     });
+
+            // AppointmentStatus Default Verileri
+            modelBuilder.Entity<AppointmentStatus>().HasData(
+                new AppointmentStatus { Id = 1, Name = "Request", Description = "Talep Edildi" },
+                new AppointmentStatus { Id = 2, Name = "Approved", Description = "Onaylandı" },
+                new AppointmentStatus { Id = 3, Name = "Cancelled", Description = "İptal Edildi" },
+                new AppointmentStatus { Id = 4, Name = "Completed", Description = "Tamamlandı" }
+            );
+
+            // Appointment İlişkileri
+            modelBuilder.Entity<Appointment>()
+                .HasOne(a => a.Employee)
+                .WithMany()
+                .HasForeignKey("EmployeeId")
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Appointment>()
+                .HasOne(a => a.Customer)
+                .WithMany()
+                .HasForeignKey("CustomerId")
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Appointment>()
+                .HasOne(a => a.Skill)
+                .WithMany()
+                .HasForeignKey("SkillId")
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Appointment>()
+                .HasOne(a => a.Status)
+                .WithMany()
+                .HasForeignKey("StatusId")
+                .OnDelete(DeleteBehavior.Restrict);
+            // GeneralSettings Default Verileri
+            modelBuilder.Entity<GeneralSettings>().HasData(new GeneralSettings
+            {
+                Id = 1,
+                Name = "Default Name",
+                Description = "Default Description",
+                LogoUrl = "/images/default-logo.png",
+                SeoTitle = "Default SEO Title",
+                SeoDescription = "Default SEO Description",
+                Keywords = "Default, SEO, Keywords"
+            });
+
         }
-
-
     }
 }

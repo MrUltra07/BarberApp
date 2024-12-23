@@ -1,384 +1,392 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BarberApp.bundle.scp.css",
-      "PackagePath": "staticwebassets\\BarberApp.uw6xli34dq.bundle.scp.css"
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BarberApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BarberApp.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\Images\\slider1.webp",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\Images\\slider1.webp",
       "PackagePath": "staticwebassets\\Images\\slider1.webp"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\Images\\slider2.webp",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\Images\\slider2.webp",
       "PackagePath": "staticwebassets\\Images\\slider2.webp"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\0bfb8b8e-c5d4-438e-aebb-0b6136809068.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\0bfb8b8e-c5d4-438e-aebb-0b6136809068.png",
       "PackagePath": "staticwebassets\\uploads\\0bfb8b8e-c5d4-438e-aebb-0b6136809068.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\0e3f84f1-2548-4376-9f53-fa23772c342b.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\0e3f84f1-2548-4376-9f53-fa23772c342b.png",
       "PackagePath": "staticwebassets\\uploads\\0e3f84f1-2548-4376-9f53-fa23772c342b.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\1dceace3-b914-4a49-83b2-e846195a59d0.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\1dceace3-b914-4a49-83b2-e846195a59d0.png",
       "PackagePath": "staticwebassets\\uploads\\1dceace3-b914-4a49-83b2-e846195a59d0.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\2a756f84-9cfa-4a3d-9fdf-b12484e02066.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\2a756f84-9cfa-4a3d-9fdf-b12484e02066.png",
       "PackagePath": "staticwebassets\\uploads\\2a756f84-9cfa-4a3d-9fdf-b12484e02066.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\42d3cb06-aecc-4059-8b40-738e71dbeb82.jpg",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\30bc315e-5a09-4930-9a01-eb7524e78922.jpg",
+      "PackagePath": "staticwebassets\\uploads\\30bc315e-5a09-4930-9a01-eb7524e78922.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\42d3cb06-aecc-4059-8b40-738e71dbeb82.jpg",
       "PackagePath": "staticwebassets\\uploads\\42d3cb06-aecc-4059-8b40-738e71dbeb82.jpg"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\59ab0ddb-b074-4da4-b2fa-c0fa9394073d.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\49a109bd-48c4-420b-bafa-2f32485cb622.png",
+      "PackagePath": "staticwebassets\\uploads\\49a109bd-48c4-420b-bafa-2f32485cb622.png"
+    },
+    {
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\59ab0ddb-b074-4da4-b2fa-c0fa9394073d.png",
       "PackagePath": "staticwebassets\\uploads\\59ab0ddb-b074-4da4-b2fa-c0fa9394073d.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\59cf2900-ffe9-4090-a80d-f77bfa3e58ef.jpg",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\59cf2900-ffe9-4090-a80d-f77bfa3e58ef.jpg",
       "PackagePath": "staticwebassets\\uploads\\59cf2900-ffe9-4090-a80d-f77bfa3e58ef.jpg"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\5a34c5ba-2614-4737-bdc3-59fdecdd83f5.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\5a34c5ba-2614-4737-bdc3-59fdecdd83f5.png",
       "PackagePath": "staticwebassets\\uploads\\5a34c5ba-2614-4737-bdc3-59fdecdd83f5.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\5ea977dd-0e7e-47be-b9fb-e14efda5b328.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\5ea977dd-0e7e-47be-b9fb-e14efda5b328.png",
       "PackagePath": "staticwebassets\\uploads\\5ea977dd-0e7e-47be-b9fb-e14efda5b328.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\6386cee6-4c21-4e33-ab7a-846d5afd6933.jpg",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\6386cee6-4c21-4e33-ab7a-846d5afd6933.jpg",
       "PackagePath": "staticwebassets\\uploads\\6386cee6-4c21-4e33-ab7a-846d5afd6933.jpg"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\7524be4b-f681-4eec-bc70-07e70bdbd8c7.jpg",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\7524be4b-f681-4eec-bc70-07e70bdbd8c7.jpg",
       "PackagePath": "staticwebassets\\uploads\\7524be4b-f681-4eec-bc70-07e70bdbd8c7.jpg"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\7d6b50be-6bda-4f16-9f26-dd6884df0c15.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\7d6b50be-6bda-4f16-9f26-dd6884df0c15.png",
       "PackagePath": "staticwebassets\\uploads\\7d6b50be-6bda-4f16-9f26-dd6884df0c15.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\7ec7d807-5029-4859-ad8f-b30abc1180ad.jpg",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\7ec7d807-5029-4859-ad8f-b30abc1180ad.jpg",
       "PackagePath": "staticwebassets\\uploads\\7ec7d807-5029-4859-ad8f-b30abc1180ad.jpg"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\8e154b41-324d-438b-afc1-fc53638952bd.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\8e154b41-324d-438b-afc1-fc53638952bd.png",
       "PackagePath": "staticwebassets\\uploads\\8e154b41-324d-438b-afc1-fc53638952bd.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\91333ade-358e-45fc-9b92-d69e685f302e.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\91333ade-358e-45fc-9b92-d69e685f302e.png",
       "PackagePath": "staticwebassets\\uploads\\91333ade-358e-45fc-9b92-d69e685f302e.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\962e4def-5c16-45f4-8e21-7bab57e0657d.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\962e4def-5c16-45f4-8e21-7bab57e0657d.png",
       "PackagePath": "staticwebassets\\uploads\\962e4def-5c16-45f4-8e21-7bab57e0657d.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\9c9fd06a-2320-4ac1-8a76-295bbd791f7a.jpg",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\9c9fd06a-2320-4ac1-8a76-295bbd791f7a.jpg",
       "PackagePath": "staticwebassets\\uploads\\9c9fd06a-2320-4ac1-8a76-295bbd791f7a.jpg"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\a02f98a0-67c6-498c-b1a9-d346e7a73c8b.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\a02f98a0-67c6-498c-b1a9-d346e7a73c8b.png",
       "PackagePath": "staticwebassets\\uploads\\a02f98a0-67c6-498c-b1a9-d346e7a73c8b.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\a16ff179-043b-4ae5-bc8a-9ff3f2da21a4.jpg",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\a16ff179-043b-4ae5-bc8a-9ff3f2da21a4.jpg",
       "PackagePath": "staticwebassets\\uploads\\a16ff179-043b-4ae5-bc8a-9ff3f2da21a4.jpg"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\b7491b4b-d872-4d15-a5f2-476145cb1f6b.jpg",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\b7491b4b-d872-4d15-a5f2-476145cb1f6b.jpg",
       "PackagePath": "staticwebassets\\uploads\\b7491b4b-d872-4d15-a5f2-476145cb1f6b.jpg"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\bb6bcf43-671c-432d-a601-e9075ee9c719.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\bb6bcf43-671c-432d-a601-e9075ee9c719.png",
       "PackagePath": "staticwebassets\\uploads\\bb6bcf43-671c-432d-a601-e9075ee9c719.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\bdecf71e-5b62-42de-b42a-2f8ccfc6b774.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\bdecf71e-5b62-42de-b42a-2f8ccfc6b774.png",
       "PackagePath": "staticwebassets\\uploads\\bdecf71e-5b62-42de-b42a-2f8ccfc6b774.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\c9946c9e-3ba2-462b-b390-24634d0be8d1.jpg",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\c27d8148-78a6-4779-ba62-8f04cc293fac.png",
+      "PackagePath": "staticwebassets\\uploads\\c27d8148-78a6-4779-ba62-8f04cc293fac.png"
+    },
+    {
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\c9946c9e-3ba2-462b-b390-24634d0be8d1.jpg",
       "PackagePath": "staticwebassets\\uploads\\c9946c9e-3ba2-462b-b390-24634d0be8d1.jpg"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\c9fa977a-a23f-43d4-afec-be72fd8e61bc.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\c9fa977a-a23f-43d4-afec-be72fd8e61bc.png",
       "PackagePath": "staticwebassets\\uploads\\c9fa977a-a23f-43d4-afec-be72fd8e61bc.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\cef6ffc7-0563-43c2-88fb-48d55e45d3fb.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\cef6ffc7-0563-43c2-88fb-48d55e45d3fb.png",
       "PackagePath": "staticwebassets\\uploads\\cef6ffc7-0563-43c2-88fb-48d55e45d3fb.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\d65238e8-e535-4913-8dbb-3a0f74a5f418.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\d65238e8-e535-4913-8dbb-3a0f74a5f418.png",
       "PackagePath": "staticwebassets\\uploads\\d65238e8-e535-4913-8dbb-3a0f74a5f418.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\da6595fa-da38-429d-9936-8255eb2af565.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\da6595fa-da38-429d-9936-8255eb2af565.png",
       "PackagePath": "staticwebassets\\uploads\\da6595fa-da38-429d-9936-8255eb2af565.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\eadcde52-5d03-470c-9ec0-c6150beee238.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\eadcde52-5d03-470c-9ec0-c6150beee238.png",
       "PackagePath": "staticwebassets\\uploads\\eadcde52-5d03-470c-9ec0-c6150beee238.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\ec00aeda-3dc7-48b6-9aac-0ba6ead205a7.jpg",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\ec00aeda-3dc7-48b6-9aac-0ba6ead205a7.jpg",
       "PackagePath": "staticwebassets\\uploads\\ec00aeda-3dc7-48b6-9aac-0ba6ead205a7.jpg"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\f1c57c87-d3af-4580-8324-c12fdd30ab9d.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\f1c57c87-d3af-4580-8324-c12fdd30ab9d.png",
       "PackagePath": "staticwebassets\\uploads\\f1c57c87-d3af-4580-8324-c12fdd30ab9d.png"
     },
     {
-      "Id": "C:\\Users\\Ahmet Safa\\Desktop\\WebOdev\\BarberApp\\BarberApp\\wwwroot\\uploads\\fe887f9e-e13c-4d1f-925c-cfb50ebf625b.png",
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\fe887f9e-e13c-4d1f-925c-cfb50ebf625b.png",
       "PackagePath": "staticwebassets\\uploads\\fe887f9e-e13c-4d1f-925c-cfb50ebf625b.png"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BarberApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BarberApp.Microsoft.AspNetCore.StaticWebAssets.props",

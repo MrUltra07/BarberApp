@@ -1,0 +1,59 @@
+﻿@model BarberApp.ViewModels.GeneralSettingsViewModel
+
+@{
+    ViewData["Title"] = "General Settings";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1 class="mt-4">General Settings</h1>
+<form method="post" enctype="multipart/form-data" action="/admin/generalsettings/update">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="Name" value="@Model.Name" disabled>
+    </div>
+
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" name="Description" rows="3" disabled>@Model.Description</textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="logo" class="form-label">Logo</label>
+        <div>
+            <img src="@Model.LogoUrl" alt="Logo" style="max-height: 100px;">
+        </div>
+        <input type="file" class="form-control mt-2" id="logo" name="LogoFile" disabled>
+    </div>
+
+    <div class="mb-3">
+        <label for="seoTitle" class="form-label">SEO Title</label>
+        <input type="text" class="form-control" id="seoTitle" name="SeoTitle" value="@Model.SeoTitle" disabled>
+    </div>
+
+    <div class="mb-3">
+        <label for="seoDescription" class="form-label">SEO Description</label>
+        <textarea class="form-control" id="seoDescription" name="SeoDescription" rows="2" disabled>@Model.SeoDescription</textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="keywords" class="form-label">Keywords</label>
+        <input type="text" class="form-control" id="keywords" name="Keywords" value="@Model.Keywords" disabled>
+    </div>
+
+    <button type="submit" class="btn btn-success" style="display: none;" id="saveButton">Save</button>
+    <button type="button" class="btn btn-primary" id="editButton">Edit</button>
+</form>
+
+
+@section Scripts {
+    <script>
+        window.onload = function () {
+            document.getElementById("editButton").addEventListener("click", function () {
+                const formFields = document.querySelectorAll("input, textarea");
+                formFields.forEach(field => field.removeAttribute("disabled"));
+                document.getElementById("saveButton").style.display = "inline-block";
+                this.style.display = "none";
+            });
+        };
+    </script>
+}

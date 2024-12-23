@@ -288,7 +288,6 @@ C:\Users\Ahmet Safa\Desktop\WebOdev\BarberApp\BarberApp\bin\Debug\net8.0\runtime
 C:\Users\Ahmet Safa\Desktop\WebOdev\BarberApp\BarberApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Ahmet Safa\Desktop\WebOdev\BarberApp\BarberApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Ahmet Safa\Desktop\WebOdev\BarberApp\BarberApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\Ahmet Safa\Desktop\WebOdev\BarberApp\BarberApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Murat\Documents\Sau_Ders\webProgramlama\BerberApp\BarberApp\bin\Debug\net8.0\EntityFramework.SqlServer.dll
 C:\Users\Murat\Documents\Sau_Ders\webProgramlama\BerberApp\BarberApp\bin\Debug\net8.0\EntityFramework.dll
 C:\Users\Murat\Documents\Sau_Ders\webProgramlama\BerberApp\BarberApp\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
@@ -308,3 +307,4 @@ C:\Users\Murat\Documents\Sau_Ders\webProgramlama\BerberApp\BarberApp\bin\Debug\n
 C:\Users\Murat\Documents\Sau_Ders\webProgramlama\BerberApp\BarberApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Murat\Documents\Sau_Ders\webProgramlama\BerberApp\BarberApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Murat\Documents\Sau_Ders\webProgramlama\BerberApp\BarberApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Ahmet Safa\Desktop\WebOdev\BarberApp\BarberApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

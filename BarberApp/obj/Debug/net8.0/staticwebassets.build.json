@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kdytYlSomzdEXIaJ/UC6pWRV7wlAcXOM3NFSl/ijznw=",
+  "Hash": "scgNMLhhaC5LQ/38A1JHgxmYeyK8LkdUBPzvPsW9hW0=",
   "Source": "BarberApp",
   "BasePath": "_content/BarberApp",
   "Mode": "Default",
@@ -1877,6 +1877,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\fe887f9e-e13c-4d1f-925c-cfb50ebf625b.png"
+    },
+    {
+      "Identity": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\fef00af6-4d23-400a-8dbe-aec9b60c949b.png",
+      "SourceId": "BarberApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\",
+      "BasePath": "_content/BarberApp",
+      "RelativePath": "uploads/fef00af6-4d23-400a-8dbe-aec9b60c949b.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\fef00af6-4d23-400a-8dbe-aec9b60c949b.png"
     }
   ]
 }

@@ -389,6 +389,10 @@
       "PackagePath": "staticwebassets\\uploads\\fe887f9e-e13c-4d1f-925c-cfb50ebf625b.png"
     },
     {
+      "Id": "C:\\Users\\Murat\\Documents\\Sau_Ders\\webProgramlama\\BerberApp\\BarberApp\\wwwroot\\uploads\\fef00af6-4d23-400a-8dbe-aec9b60c949b.png",
+      "PackagePath": "staticwebassets\\uploads\\fef00af6-4d23-400a-8dbe-aec9b60c949b.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BarberApp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

@@ -102,7 +102,15 @@ namespace BarberApp.Models
                 SeoDescription = "Default SEO Description",
                 Keywords = "Default, SEO, Keywords"
             });
+            var defaultTimes = Enumerable.Range(0, 7).Select(dayIndex => new AvailableTime
+            {
+                Id = dayIndex + 1,
+                DayIndex = dayIndex,
+                StartTime = new TimeSpan(8, 0, 0),
+                EndTime = new TimeSpan(17, 0, 0)
+            }).ToArray();
 
+            modelBuilder.Entity<AvailableTime>().HasData(defaultTimes);
         }
     }
 }

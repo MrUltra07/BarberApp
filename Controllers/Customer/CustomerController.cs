@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BarberApp.Models;
 using System.Linq;
+using Microsoft.AspNetCore.Identity;
 
 
 namespace BarberApp.Controllers.Customer
 {
+
 	public class CustomerController : Controller
 	{
 		private readonly AppDbContext _context;
@@ -17,7 +19,7 @@ namespace BarberApp.Controllers.Customer
 		[HttpGet]
 		public IActionResult Login()
 		{
-			return View("Login/Login"); // View: Views/Customer/Login/Login.cshtml
+			return View("Login/Index"); 
 		}
 
 		[HttpPost]
@@ -25,23 +27,25 @@ namespace BarberApp.Controllers.Customer
 		{
 			try
 			{
-				// Veritabanında email ve şifreyi kontrol et
-				var customer = _context.Customers
-					.FirstOrDefault(c => c.Email == email && c.Password == password);
+				// Kullanıcıyı e-posta adresine göre bul
+				var customer = _context.Customers.FirstOrDefault(c => c.Email == email);
 
 				if (customer == null)
 				{
-					// Eğer müşteri bulunmazsa hata mesajı göster
-					ViewBag.ErrorMessage = "Geçersiz e-posta veya şifre.";
-					return View(); // Hata mesajını göster ve tekrar giriş sayfasını render et
+					// Kullanıcı bulunamazsa
+					ViewBag.ErrorMessage = "Bu e-posta adresine ait bir hesap bulunamadı.";
+					return View("Login/Index");
+				}
+
+				// Şifreyi kontrol et (düz metin karşılaştırması)
+				if (customer.Password != password)
+				{
+					// Şifre yanlışsa
+					ViewBag.ErrorMessage = "Geçersiz şifre. Lütfen tekrar deneyin.";
+					return View("Login/Index");
 				}
 
 				// Başarılı giriş
-				Console.WriteLine("deneme");
-				Console.WriteLine($"Email: {email}, Password: {password}");
-				Console.WriteLine("deneme");
-
-				// Session'a müşteri ID'sini kaydet
 				HttpContext.Session.SetString("CustomerName", customer.Name);
 				HttpContext.Session.SetString("CustomerId", customer.Id.ToString());
 
@@ -50,11 +54,15 @@ namespace BarberApp.Controllers.Customer
 			}
 			catch (Exception ex)
 			{
-				// Hata oluşursa logla
+				// Hata durumunda logla
+				ViewBag.ErrorMessage = "Bir hata oluştu. Lütfen tekrar deneyiniz.";
 				Console.WriteLine($"Hata: {ex.Message}");
-				throw;
+				return View("Login/Index");
 			}
 		}
+
+
+
 
 		public IActionResult Logout()
 		{
@@ -69,7 +77,7 @@ namespace BarberApp.Controllers.Customer
 		[HttpGet]
 		public IActionResult Register()
 		{
-			return View("Register/Register"); // View: Views/Customer/Register/Register.cshtml
+			return View("Register/Index");
 		}
 
 		[HttpPost]
@@ -77,35 +85,31 @@ namespace BarberApp.Controllers.Customer
 		{
 			if (!ModelState.IsValid)
 			{
-				// Model valid değilse, hataları göster
-				return View(model);
+				ViewBag.ErrorMessage = "Lütfen tüm alanları doğru doldurun.";
+				return View("Register/Index");
 			}
 
-			try
+			// Zaman türünü UTC'ye çevir
+			model.BirthDay = DateTime.SpecifyKind(model.BirthDay, DateTimeKind.Utc);
+
+			// E-posta adresinin benzersiz olup olmadığını kontrol et
+			if (_context.Customers.Any(c => c.Email == model.Email))
 			{
-				// Müşteri email kontrolü
-				var existingCustomer = _context.Customers.FirstOrDefault(c => c.Email == model.Email);
-				if (existingCustomer != null)
-				{
-					ViewBag.ErrorMessage = "Bu e-posta adresi zaten kayıtlı.";
-					return View(model);
-				}
-
-				// Yeni müşteri kaydet
-				_context.Customers.Add(model);
-				_context.SaveChanges();
-
-				// Başarılı kayıt, Login sayfasına yönlendir
-				return RedirectToAction("Login", "Customer");
+				ViewBag.ErrorMessage = "Bu e-posta adresi zaten kullanılıyor.";
+				return View("Register/Index");
 			}
-			catch (Exception ex)
-			{
-				Console.WriteLine($"Hata: {ex.Message}");
-				ViewBag.ErrorMessage = "Kayıt işlemi sırasında bir hata oluştu.";
-				return View(model);
-			}
+
+			// Şifreyi hashle
+			//var passwordHasher = new PasswordHasher<BarberApp.Models.Customer>();
+			//model.Password = passwordHasher.HashPassword(model, model.Password);
+
+			// Yeni kullanıcıyı kaydet
+			_context.Customers.Add(model);
+			_context.SaveChanges();
+
+			// Başarılı kayıt sonrası giriş sayfasına yönlendir
+			return RedirectToAction("Login");
 		}
-
 
 	}
 }

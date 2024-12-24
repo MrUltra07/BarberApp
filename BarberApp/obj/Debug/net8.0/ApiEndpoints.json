@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "ContainingType": "BarberApp.Controllers.Api.ScheduleController",
+    "Method": "GetAvailableSlots",
+    "RelativePath": "api/schedules/available-slots",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "skillId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "employeeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

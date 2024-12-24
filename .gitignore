@@ -1,13 +1,13 @@
-# Visual Studio için
+# Visual Studio ile ilgili
 .vs/
 *.user
 *.suo
 *.cache
 *.log
 
-# Yapı (Build) Dosyaları (Bin ve Obj Takipte Kalabilir)
+# Yapı (Build) Dosyaları
 bin/
-BarberApp/obj/
+obj/
 
 # Kullanıcıya Özgü Dosyalar
 *.ide*
@@ -16,9 +16,37 @@ BarberApp/obj/
 *.tmp
 
 # ASP.NET için
-# wwwroot'u tamamen ignore etmek yerine altındaki geçici dosyaları ignore edebilirsiniz
 wwwroot/**/*.log
 wwwroot/**/*.tmp
+wwwroot/**/*.cache
+wwwroot/**/*.bak
+
+# Paket Yöneticisi Dosyaları
+node_modules/
+package-lock.json
+yarn.lock
 
 # Geliştirme Ayarları
 appsettings.Development.json
+
+# Git ile İlgili
+*.orig
+
+# Geçici Dosyalar
+*.tmp
+*.temp
+~*
+
+# Çekirdek Dumps
+*.pid
+*.dmp
+
+# MacOS İlgili
+.DS_Store
+
+# Windows İlgili
+Thumbs.db
+desktop.ini
+
+# Linux İlgili
+*.swp

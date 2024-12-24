@@ -4,7 +4,7 @@ namespace BarberApp.Models
 {
     public class Appointment
     {
-        public required int Id { get; set; } // PK, AI
+        public  int Id { get; set; } // PK, AI
         public required DateTime Date { get; set; } // *
 
         public required Employee Employee { get; set; } // Navigation Property

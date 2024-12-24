@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -15,6 +15,14 @@
     <EmbeddedResource Remove="Views\NewFolder2\**" />
     <None Remove="Views\NewFolder1\**" />
     <None Remove="Views\NewFolder2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Helpers\DateHelper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Helpers\DateHelper.cs" />
   </ItemGroup>
 
   <ItemGroup>

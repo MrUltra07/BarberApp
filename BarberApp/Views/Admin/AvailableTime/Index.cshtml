@@ -1,0 +1,58 @@
+﻿@model List<BarberApp.Models.AvailableTime>
+
+@{
+    ViewData["Title"] = "Available Times";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@{
+    var days = new Dictionary<int, string>
+    {
+        { 0, "Pazar" },
+        { 1, "Pazartesi" },
+        { 2, "Salı" },
+        { 3, "Çarşamba" },
+        { 4, "Perşembe" },
+        { 5, "Cuma" },
+        { 6, "Cumartesi" }
+    };
+}
+
+<h1>Available Times</h1>
+
+@if (TempData["Status"] != null && TempData["Message"] != null)
+{
+    <div class="alert @(TempData["Status"].ToString() == "ok" ? "alert-success" : "alert-danger")" role="alert">
+        @TempData["Message"]
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Day</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var time in Model)
+        {
+            <tr>
+                <form method="post" action="/admin/availability/update">
+                    <input type="hidden" name="DayIndex" value="@time.DayIndex" />
+                <td>@days[time.DayIndex]</td>
+                <td>
+                    <input type="time" class="form-control" name="StartTime" value="@time.StartTime.ToString(@"hh\:mm")" />
+                </td>
+                <td>
+                    <input type="time" class="form-control" name="EndTime" value="@time.EndTime.ToString(@"hh\:mm")" />
+                </td>
+                <td>
+                    <button type="submit" class="btn btn-success">Save</button>
+                </td>
+                </form>
+            </tr>
+        }
+    </tbody>
+</table>

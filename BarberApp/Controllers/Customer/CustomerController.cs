@@ -2,6 +2,7 @@
 using BarberApp.Models;
 using System.Linq;
 
+
 namespace BarberApp.Controllers.Customer
 {
 	public class CustomerController : Controller
@@ -42,6 +43,7 @@ namespace BarberApp.Controllers.Customer
 
 				// Session'a müşteri ID'sini kaydet
 				HttpContext.Session.SetString("CustomerName", customer.Name);
+				HttpContext.Session.SetString("CustomerId", customer.Id.ToString());
 
 				// Ana sayfaya yönlendir
 				return RedirectToAction("Index", "Home");
@@ -62,6 +64,48 @@ namespace BarberApp.Controllers.Customer
 			// Login sayfasına yönlendir
 			return RedirectToAction("Login", "Customer");
 		}
+
+
+		[HttpGet]
+		public IActionResult Register()
+		{
+			return View("Register/Register"); // View: Views/Customer/Register/Register.cshtml
+		}
+
+		[HttpPost]
+		public IActionResult Register(BarberApp.Models.Customer model)
+		{
+			if (!ModelState.IsValid)
+			{
+				// Model valid değilse, hataları göster
+				return View(model);
+			}
+
+			try
+			{
+				// Müşteri email kontrolü
+				var existingCustomer = _context.Customers.FirstOrDefault(c => c.Email == model.Email);
+				if (existingCustomer != null)
+				{
+					ViewBag.ErrorMessage = "Bu e-posta adresi zaten kayıtlı.";
+					return View(model);
+				}
+
+				// Yeni müşteri kaydet
+				_context.Customers.Add(model);
+				_context.SaveChanges();
+
+				// Başarılı kayıt, Login sayfasına yönlendir
+				return RedirectToAction("Login", "Customer");
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine($"Hata: {ex.Message}");
+				ViewBag.ErrorMessage = "Kayıt işlemi sırasında bir hata oluştu.";
+				return View(model);
+			}
+		}
+
 
 	}
 }

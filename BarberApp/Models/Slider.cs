@@ -6,7 +6,7 @@ namespace BarberApp.Models
     {
         public required  int Id { get; set; } // PK, AI
 
-
+		
 		public required string ImageUrl { get; set; } // *
 
 		[Required(ErrorMessage = "Title is required.")]

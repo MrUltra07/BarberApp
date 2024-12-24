@@ -7,7 +7,7 @@
 
 # Yapı (Build) Dosyaları (Bin ve Obj Takipte Kalabilir)
 bin/
-obj/
+BarberApp/obj/
 
 # Kullanıcıya Özgü Dosyalar
 *.ide*

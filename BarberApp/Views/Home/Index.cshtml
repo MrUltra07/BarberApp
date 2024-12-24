@@ -1,8 +1,61 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var sliders = ViewData["Sliders"] as List<BarberApp.Models.Slider>;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+<!-- Slider Component -->
+@if (sliders != null && sliders.Any())
+{
+    <div id="homeSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            @for (int i = 0; i < sliders.Count; i++)
+            {
+                <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="@i" class="@(i == 0 ? "active" : "")" aria-current="true" aria-label="Slide @i"></button>
+            }
+        </div>
+        <div class="carousel-inner">
+            @foreach (var slider in sliders)
+            {
+                <div class="carousel-item @(sliders.IndexOf(slider) == 0 ? "active" : "")">
+                    <img src="@slider.ImageUrl" class="d-block w-100" alt="@slider.Title">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>@slider.Title</h5>
+                        <p>@slider.Description</p>
+                    </div>
+                </div>
+            }
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#homeSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homeSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+}
+else
+{
+    <p>No sliders available at the moment.</p>
+}
+
+
+<style>
+    /* Slider'ın yüksekliğini ve genişliğini değiştirme */
+    #homeSlider {
+        width: 100%; /* Genişliği %100 yaparak ekran genişliğine uyumlu hale getirir */
+        height: 500px; /* İstediğiniz yüksekliği belirleyin */
+    }
+
+        #homeSlider .carousel-inner {
+            height: 100%; /* Carousel içeriği yüksekliği */
+        }
+
+        #homeSlider .carousel-item img {
+            width: 100%; /* Resmin genişliği %100 olacak şekilde */
+            height: 100%; /* Resmin yüksekliği %100 olacak şekilde */
+            object-fit: cover; /* Resmi kapsama (cover) yaparak kesilmesini engeller */
+        }
+</style>

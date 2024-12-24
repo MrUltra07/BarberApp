@@ -3,6 +3,7 @@ using System;
 using BarberApp.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BarberApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241223162315_Customer")]
+    partial class Customer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -125,57 +128,6 @@ namespace BarberApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AvailableTimes");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            DayIndex = 0,
-                            EndTime = new TimeSpan(0, 17, 0, 0, 0),
-                            StartTime = new TimeSpan(0, 8, 0, 0, 0)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            DayIndex = 1,
-                            EndTime = new TimeSpan(0, 17, 0, 0, 0),
-                            StartTime = new TimeSpan(0, 8, 0, 0, 0)
-                        },
-                        new
-                        {
-                            Id = 3,
-                            DayIndex = 2,
-                            EndTime = new TimeSpan(0, 17, 0, 0, 0),
-                            StartTime = new TimeSpan(0, 8, 0, 0, 0)
-                        },
-                        new
-                        {
-                            Id = 4,
-                            DayIndex = 3,
-                            EndTime = new TimeSpan(0, 17, 0, 0, 0),
-                            StartTime = new TimeSpan(0, 8, 0, 0, 0)
-                        },
-                        new
-                        {
-                            Id = 5,
-                            DayIndex = 4,
-                            EndTime = new TimeSpan(0, 17, 0, 0, 0),
-                            StartTime = new TimeSpan(0, 8, 0, 0, 0)
-                        },
-                        new
-                        {
-                            Id = 6,
-                            DayIndex = 5,
-                            EndTime = new TimeSpan(0, 17, 0, 0, 0),
-                            StartTime = new TimeSpan(0, 8, 0, 0, 0)
-                        },
-                        new
-                        {
-                            Id = 7,
-                            DayIndex = 6,
-                            EndTime = new TimeSpan(0, 17, 0, 0, 0),
-                            StartTime = new TimeSpan(0, 8, 0, 0, 0)
-                        });
                 });
 
             modelBuilder.Entity("BarberApp.Models.Customer", b =>

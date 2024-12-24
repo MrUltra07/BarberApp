@@ -1,0 +1,29 @@
+﻿@model BarberApp.Models.Customer
+
+<div class="container mt-5">
+    <h2 class="text-center">Giriş Yap</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+            }
+
+            <form asp-action="Login" asp-controller="Customer" method="post">
+                <div class="form-group mb-3">
+                    <label for="Email">E-posta</label>
+                    <input type="email" name="email" class="form-control" id="Email" required />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="Password">Şifre</label>
+                    <input type="password" name="password" class="form-control" id="Password" required />
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Giriş Yap</button>
+            </form>
+
+            <p class="text-center mt-3">
+                Henüz bir hesabınız yok mu? <a asp-action="Register" asp-controller="Customer">Kayıt Ol</a>
+            </p>
+        </div>
+    </div>
+</div>

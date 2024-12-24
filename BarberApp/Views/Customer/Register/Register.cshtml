@@ -1,0 +1,55 @@
+﻿@model BarberApp.Models.Customer
+
+<div class="container mt-5">
+    <h2 class="text-center">Kayıt Ol</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+            }
+
+            <form asp-action="Register" asp-controller="Customer" method="post" class="needs-validation" novalidate>
+                <div class="form-group mb-3">
+                    <label for="Name">İsim</label>
+                    <input type="text" asp-for="Name" class="form-control" id="Name" required />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="Surname">Soyisim</label>
+                    <input type="text" asp-for="Surname" class="form-control" id="Surname" required />
+                    <span asp-validation-for="Surname" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="Email">E-posta</label>
+                    <input type="email" asp-for="Email" class="form-control" id="Email" required />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="PhoneNumber">Telefon Numarası</label>
+                    <input type="text" asp-for="PhoneNumber" class="form-control" id="PhoneNumber" required />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="BirthDay">Doğum Tarihi</label>
+                    <input type="date" asp-for="BirthDay" class="form-control" id="BirthDay" required />
+                    <span asp-validation-for="BirthDay" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="Password">Şifre</label>
+                    <input type="password" asp-for="Password" class="form-control" id="Password" required />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Kayıt Ol</button>
+            </form>
+
+            <p class="text-center mt-3">
+                Zaten bir hesabınız var mı? <a asp-action="Login" asp-controller="Customer">Giriş Yap</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

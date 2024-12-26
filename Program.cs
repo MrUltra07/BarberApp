@@ -27,6 +27,7 @@ builder.Services.AddSession(options =>
 	options.Cookie.IsEssential = true;             // GDPR uyumluluðu
 });
 
+builder.Services.AddHttpClient();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline

@@ -94,6 +94,8 @@ namespace BarberApp.Controllers
 				ViewBag.ErrorMessage = "Lütfen tüm alanları doğru doldurun.";
 				return View("Register/Index");
 			}
+			// Zaman türünü UTC'ye çevir
+			model.BirthDay = DateTime.SpecifyKind(model.BirthDay, DateTimeKind.Utc);
 
 			if (_context.Customers.Any(c => c.Email == model.Email))
 			{
@@ -106,7 +108,5 @@ namespace BarberApp.Controllers
 
 			return RedirectToAction("Login");
 		}
-
-
 	}
 }

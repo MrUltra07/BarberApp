@@ -5,6 +5,7 @@
     ViewBag.Title = "Randevu Al";
 }
 
+
 <div class="container mt-5">
     <h2 class="text-center">Randevu Al</h2>
     @if (ViewBag.ErrorMessage != null)
@@ -23,6 +24,7 @@
             <label for="Skill">Yetenek</label>
             <select id="Skill" name="SkillId" class="form-control" onchange="loadEmployees()" required>
                 <option value="">Yetenek Seçin</option>
+
 
                 @{
                     if(ViewBag.Skills != null)
@@ -126,6 +128,7 @@
                         return;
                     }
 
+
                     timeSelect.innerHTML = '<option value="">Saat seçin</option>';
                     data.forEach(slot => {
                         const option = document.createElement("option");
@@ -145,3 +148,4 @@
 
     </script>
 }
+

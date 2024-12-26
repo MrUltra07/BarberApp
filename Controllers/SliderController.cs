@@ -24,7 +24,7 @@ namespace BarberApp.Controllers
 				sliders = new List<Slider>(); // Boş liste oluşturuyoruz
 			}
 
-			return View("Index",sliders); // Model'i view'a gönderiyoruz
+			return View("Index", sliders); // Model'i view'a gönderiyoruz
 		}
 
 	}

@@ -3,7 +3,7 @@ using BarberApp.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
-namespace BarberApp.Controllers.Appointments
+namespace BarberApp.Controllers
 {
 	public class AppointmentsController : Controller
 	{

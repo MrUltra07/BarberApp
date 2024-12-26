@@ -18,10 +18,8 @@ namespace BarberApp.Controllers.Api
         [HttpGet("available-slots")]
         public IActionResult GetAvailableSlots(int skillId, int employeeId, DateTime date)
         {
-            // Tarihi UTC'ye çevir
-            var utcDate = date.ToUniversalTime();
-
-            // Validate the employee and skill relationship
+            var laterDate = date.AddDays(+1);
+            // 1. İstek ile gelen çalışan ve beceri eşleşmesini doğrula
             var employee = _context.Employees
                 .Include(e => e.Skills)
                 .FirstOrDefault(e => e.Id == employeeId);
@@ -29,49 +27,93 @@ namespace BarberApp.Controllers.Api
             if (employee == null || !employee.Skills.Any(s => s.Id == skillId))
                 return BadRequest("Skill not available for the specified employee.");
 
-            // Get skill duration
+            // 2. İstenilen beceri süresini al
             var skill = _context.Skills.FirstOrDefault(s => s.Id == skillId);
+            if (skill == null)
+                return BadRequest("Skill not found.");
             int skillDuration = skill.Duration;
 
-            // Get employee's working hours for the given day
-            int dayIndex = (int)utcDate.DayOfWeek + 1;
+            // 3. Dinlenme süresini ata
+            int breakTime = 10;
+
+            // 4. Verilen date günündeki dükkanın açık kaldığı süreleri çek
+            int dayIndex = (int)date.DayOfWeek;
             var availability = _context.AvailableTimes.FirstOrDefault(a => a.DayIndex == dayIndex);
             if (availability == null)
                 return BadRequest("No working hours found for this day.");
 
-            // Get all appointments for the employee on the given date
+            // 5. Bu başlangıç ve bitiş zamanı arasındaki tüm zamanı 10'ar dakikalık partlara böl ve bir listeye ata
+            List<TimeSpan> allSlots = new List<TimeSpan>();
+            TimeSpan currentSlot = availability.StartTime;
+
+            while (currentSlot.Add(TimeSpan.FromMinutes(skillDuration)) <= availability.EndTime)
+            {
+                allSlots.Add(currentSlot);
+                currentSlot = currentSlot.Add(TimeSpan.FromMinutes(10));
+            }
+            // DateTime'ı UTC+3 zaman dilimine dönüştür
+            var utcDate = laterDate.ToUniversalTime();
+
+            // Gün başlangıcını ve bitişini UTC olarak ayarla
+            var startOfDayUtc = utcDate.Date;
+            var endOfDayUtc = utcDate.Date.AddDays(1).AddSeconds(-1);
+
+            // Randevuları çek
             var appointments = _context.Appointments
-                .Where(a => a.Employee.Id == employeeId && a.Date.Date == utcDate.Date)
+                .Where(a => a.Employee.Id == employeeId
+                            && a.Date >= startOfDayUtc && a.Date <= endOfDayUtc) // UTC olarak tarih filtreleme
                 .Select(a => new
                 {
                     StartTime = a.Date.TimeOfDay,
-                    EndTime = a.Date.TimeOfDay.Add(TimeSpan.FromMinutes(a.Skill.Duration))
-                }).ToList();
+                    EndTime = a.Date.TimeOfDay.Add(TimeSpan.FromMinutes(a.Skill.Duration)),
+                    Duration = a.Skill.Duration,
+                })
+                .OrderBy(a => a.StartTime)
+                .ToList();
 
-            // Calculate available slots
-            List<TimeSpan> availableSlots = new List<TimeSpan>();
-            TimeSpan currentStartTime = availability.StartTime;
-
-            while (currentStartTime.Add(TimeSpan.FromMinutes(skillDuration)) <= availability.EndTime)
+            // 7. Randevuları döngüye sok
+            foreach (var appointment in appointments)
             {
-                // Check if the current slot is free or if there are no appointments
-                bool isFree = appointments.All(appt =>
-                    currentStartTime >= appt.EndTime ||
-                    currentStartTime.Add(TimeSpan.FromMinutes(skillDuration)) <= appt.StartTime);
+                // Randevunun başlangıç ve bitiş saatlerini UTC+3'e dönüştür
+                var appointmentStartLocal = appointment.StartTime.Add(TimeSpan.FromHours(3));
+                var appointmentEndLocal = appointment.EndTime.Add(TimeSpan.FromHours(3));
 
-                if (isFree)
-                    availableSlots.Add(currentStartTime);
+                // 8. Randevunun bitiş süresini hesapla + bekleme süresini ekle
+                var appointmentEndWithBreak = appointmentEndLocal.Add(TimeSpan.FromMinutes(breakTime));
 
-                // Increment by 10 minutes
-                currentStartTime = currentStartTime.Add(TimeSpan.FromMinutes(10));
+                // 9. Randevunun başlangıç saati ile bitiş + bekleme süresi arasındaki tüm 10'ar dakikalık süreleri listeden çıkart
+                allSlots = allSlots.Where(slot =>
+                    slot.Add(TimeSpan.FromMinutes(skillDuration)) <= appointmentStartLocal ||
+                    slot >= appointmentEndWithBreak).ToList();
+
+                // 10. İstenilen beceri süresini randevu başlangıcından çıkart ve aradaki tüm 10'ar dakikaları listeden çıkart
+                //var appointmentStartMinusSkill = appointmentStartLocal.Subtract(TimeSpan.FromMinutes(skillDuration));
+                allSlots = allSlots.Where(slot =>
+                    slot.Add(TimeSpan.FromMinutes(skillDuration)).Add(TimeSpan.FromMinutes(10)) <= appointmentStartLocal ||
+                    slot >= appointmentStartLocal).ToList();
             }
 
-            // Return available slots
-            if (!availableSlots.Any())
+
+            // 11. Tüm randevular bitince döngüden çıkmış olacağız
+
+            // 12. Listenin son halini API'de döndür
+            if (!allSlots.Any())
                 return Ok(new List<string> { "No available slots for this day." });
 
-            return Ok(availableSlots.Select(t => t.ToString("hh\\:mm")));
+            //return Ok(new
+            //{
+            //    AvailableSlots = allSlots,
+            //    Appointments = appointments.Select(a => new
+            //    {
+            //        StartTimeUtc = a.StartTime.ToString(@"hh\:mm"),
+            //        EndTimeUtc = a.EndTime.ToString(@"hh\:mm"),
+            //        StartTimeLocal = a.StartTime.Add(TimeSpan.FromHours(3)).ToString(@"hh\:mm"),
+            //        EndTimeLocal = a.EndTime.Add(TimeSpan.FromHours(3)).ToString(@"hh\:mm")
+            //    })
+            //});
+            return Ok(allSlots);
         }
+
 
     }
 }

@@ -1,59 +1,151 @@
-﻿@model BarberApp.Models.Appointment
+﻿@model BarberApp.ViewModels.BookAppointmentViewModel
 
 @{
     var customerName = Context.Session.GetString("CustomerName");
+    ViewBag.Title = "Randevu Al";
 }
 
-    <div class="container mt-5">
-        <h2 class="text-center">Randevu Al</h2>
-        @if (ViewBag.ErrorMessage != null)
-        {
-            <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+
+<div class="container mt-5">
+    <h2 class="text-center">Randevu Al</h2>
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+    }
+
+    <form asp-action="BookAppointment" asp-controller="CustomerAppointment" method="post" class="needs-validation" novalidate>
+        <div class="form-group mb-3">
+            <label for="Date">Tarih</label>
+            <input type="date" id="Date" name="AppointmentDate" class="form-control" onchange="loadEmployees()" required />
+            <span asp-validation-for="AppointmentDate" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Skill">Yetenek</label>
+            <select id="Skill" name="SkillId" class="form-control" onchange="loadEmployees()" required>
+                <option value="">Yetenek Seçin</option>
+
+
+                @{
+                    if(ViewBag.Skills != null)
+                    {
+                        foreach (var skill in ViewBag.Skills)
+                        {
+                            <option value="@skill.Id">@skill.Title</option>
+                        }
+                    }
+                }
+                
+            </select>
+            <span asp-validation-for="SkillId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Employee">Çalışan</label>
+            <select id="Employee" name="EmployeeId" class="form-control" onchange="loadAvailableTimes()" disabled required>
+                <option value="">Önce tarih ve yetenek seçin</option>
+            </select>
+            <span asp-validation-for="EmployeeId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="AvailableTimes">Uygun Saatler</label>
+            <select id="AvailableTimes" name="TimeSlot" class="form-control" disabled required>
+                <option value="">Önce çalışan seçin</option>
+            </select>
+            <span asp-validation-for="TimeSlot" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Randevu Al</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        function loadEmployees() {
+            const date = document.getElementById("Date").value;
+            const skillId = document.getElementById("Skill").value;
+
+            if (!date || !skillId) return;
+
+            // Employee seçimini temizle ve disable yap
+            const employeeSelect = document.getElementById("Employee");
+            employeeSelect.innerHTML = '<option value="">Çalışan yükleniyor...</option>';
+            employeeSelect.disabled = true;
+
+            // Uygun saatleri temizle ve disable yap
+            const timeSelect = document.getElementById("AvailableTimes");
+            timeSelect.innerHTML = '<option value="">Önce çalışan seçin</option>';
+            timeSelect.disabled = true;
+
+            fetch(`/api/employees?skillId=${skillId}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.length === 0) {
+                        employeeSelect.innerHTML = '<option value="">Seçilen yetenek için çalışan bulunamadı</option>';
+                        return;
+                    }
+
+                    employeeSelect.innerHTML = '<option value="">Çalışan seçin</option>';
+                    data.forEach(emp => {
+                        const option = document.createElement("option");
+                        option.value = emp.id;
+                        option.textContent = emp.name;
+                        employeeSelect.appendChild(option);
+                    });
+
+                    employeeSelect.disabled = false;
+                })
+                .catch(error => {
+                    console.error("Error loading employees:", error);
+                    employeeSelect.innerHTML = '<option value="">Hata oluştu</option>';
+                });
         }
 
-        <form asp-action="BookAppointment" asp-controller="Appointments" method="post" class="needs-validation" novalidate>
-            <div class="form-group mb-3">
-                <label for="Date">Randevu Tarihi</label>
-                <input type="datetime-local" asp-for="Date" class="form-control" id="Date" required />
-                <span asp-validation-for="Date" class="text-danger"></span>
-            </div>
+        function loadAvailableTimes() {
+            const date = document.getElementById("Date").value;
+            const skillId = document.getElementById("Skill").value;
+            const employeeId = document.getElementById("Employee").value;
 
-            <div class="form-group mb-3">
-                <label for="Employee">Çalışan</label>
-                <select asp-for="Employee.Id" class="form-control" required>
-                    <option value="">Çalışan Seçin</option>
-                    @foreach (var employee in ViewBag.Employees)
-                    {
-                        <option value="@employee.Id">@employee.Name</option>
+            if (!date || !skillId || !employeeId) return;
+
+            // Uygun saatleri temizle ve disable yap
+            const timeSelect = document.getElementById("AvailableTimes");
+            timeSelect.innerHTML = '<option value="">Saatler yükleniyor...</option>';
+            timeSelect.disabled = true;
+
+            fetch(`/api/schedules/available-slots?skillId=${skillId}&employeeId=${employeeId}&date=${date}`)
+                .then(response => {
+                    if (!response.ok) {
+                        // Hata durumunda metni al ve hataya düşmeden işleyelim
+                        return response.text().then(text => { throw new Error(text); });
                     }
-                </select>
-                <span asp-validation-for="Employee" class="text-danger"></span>
-            </div>
-
-            <div class="form-group mb-3">
-                <label for="Skill">Yetenek</label>
-                <select asp-for="Skill.Id" class="form-control" required>
-                    <option value="">Yetenek Seçin</option>
-                    @foreach (var skill in ViewBag.Skills)
-                    {
-                        <option value="@skill.Id">@skill.Title</option>
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.length === 0 || data[0] === "No available slots for this day.") {
+                        timeSelect.innerHTML = '<option value="">Bu gün için uygun saat yok</option>';
+                        return;
                     }
-                </select>
-                <span asp-validation-for="Skill" class="text-danger"></span>
-            </div>
 
-            <div class="form-group mb-3">
-                <label for="Status">Randevu Durumu</label>
-                <select asp-for="Status.Id" class="form-control" required>
-                    <option value="">Durum Seçin</option>
-                    @foreach (var status in ViewBag.Statuses)
-                    {
-                        <option value="@status.Id">@status.Name</option>
-                    }
-                </select>
-                <span asp-validation-for="Status" class="text-danger"></span>
-            </div>
 
-            <button type="submit" class="btn btn-primary w-100">Randevu Al</button>
-        </form>
-    </div>
+                    timeSelect.innerHTML = '<option value="">Saat seçin</option>';
+                    data.forEach(slot => {
+                        const option = document.createElement("option");
+                        option.value = slot;
+                        option.textContent = slot;
+                        timeSelect.appendChild(option);
+                    });
+
+                    timeSelect.disabled = false;
+                })
+                .catch(error => {
+                    console.error("Error loading available times:", error);
+                    // Hata durumunda kullanıcıya uygun mesaj göster
+                    timeSelect.innerHTML = `<option value="">${error.message}</option>`;
+                });
+        }
+
+    </script>
+}
+

@@ -12,6 +12,6 @@
         public required string Password { get; set; } // Zorunlu alan
 
         // Employee'nin Skills ile ilişkisi
-        public ICollection<Skill> Skills { get; set; } = new List<Skill>();
+        public List<Skill> Skills { get; set; } = new List<Skill>();
     }
 }

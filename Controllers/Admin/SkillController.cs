@@ -20,13 +20,13 @@ namespace BarberApp.Controllers.Admin
 		public IActionResult Skills()
 		{
 			var skills = _context.Skills.ToList(); // Tüm skill'leri getir
-			return View(viewAdress + "/Index,cshtml", skills); // Skills.cshtml'e skill'leri gönder
+			return View(viewAdress + "Index.cshtml", skills); // Skills.cshtml'e skill'leri gönder
 		}
 
 		[HttpGet("skills/create")]
 		public IActionResult CreateSkill()
 		{
-			return View("Skills/Create/Index"); // CreateSkill.cshtml dosyasını döner
+			return View(viewAdress + "Create/Index.cshtml"); // CreateSkill.cshtml dosyasını döner
 		}
 		[HttpPost("skills/create")]
 		public IActionResult CreateSkill(Skill newSkill)

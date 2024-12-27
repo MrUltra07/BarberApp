@@ -1,0 +1,27 @@
+﻿@model IEnumerable<BarberApp.Models.Invoice>
+@{
+    ViewData["Title"] = "Invoices";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml"; // Layout dosyanızın yolu
+}
+
+<h1>Faturalar</h1>
+
+<div class="accordion" id="invoiceAccordion">
+    @foreach (var invoice in Model)
+    {
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-@invoice.AppointmentId">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-@invoice.AppointmentId" aria-expanded="true" aria-controls="collapse-@invoice.AppointmentId">
+                    Tarih: @invoice.Appointment.Date.ToString("g") - Çalışan: @invoice.Appointment.Employee.Name - Müşteri: @invoice.Appointment.Customer.Name
+                </button>
+            </h2>
+            <div id="collapse-@invoice.AppointmentId" class="accordion-collapse collapse" aria-labelledby="heading-@invoice.AppointmentId" data-bs-parent="#invoiceAccordion">
+                <div class="accordion-body">
+                    <p><strong>Tip Miktarı:</strong> @invoice.TipAmount.ToString("C")</p>
+                    <p><strong>Randevu ID:</strong> @invoice.AppointmentId</p>
+                    <p><strong>Randevu Tarihi:</strong> @invoice.Appointment.Date.AddHours(3).ToString("g")</p> <!-- Oluşturulma tarihini ekleyin, bu özellik fatura modelinde olmalıdır -->
+                </div>
+            </div>
+        </div>
+    }
+</div>

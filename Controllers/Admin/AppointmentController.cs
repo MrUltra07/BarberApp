@@ -27,7 +27,7 @@ namespace BarberApp.Controllers
             if (employeeIdString == null)
             {
                 // Eğer session'da EmployeeId yoksa, kullanıcı login sayfasına yönlendirilir
-                return RedirectToAction("Index", "Login");
+                return RedirectToAction("Login", "Admin");
             }
 
             int employeeId = int.Parse(employeeIdString);
@@ -108,7 +108,7 @@ namespace BarberApp.Controllers
             {
                 if(status.Name == "Completed")
                 {
-                    return RedirectToAction("CompletedAppointments", "Appointment");
+                    return RedirectToAction("Create", "Invoice", new {appointmentId = appointment.Id });
 
                 }
                 appointment.Status = status;

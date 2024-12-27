@@ -24,6 +24,7 @@ namespace BarberApp.Controllers.Admin
 		[HttpGet("employees/create")]
 		public IActionResult CreateEmployee()
 		{
+
 			var viewModel = new EmployeeViewModel
 			{
 				Employee = new Employee
@@ -40,17 +41,35 @@ namespace BarberApp.Controllers.Admin
 				SelectedSkillIds = new List<int>()
 			};
 
-			return View(viewAdress + "Create/Index.cshtml", viewModel); // Create Employee view'i göster
+
+			return View(viewAdress + "Create/Index.cshtml", viewModel);
 		}
 
 		[HttpPost("employees/create")]
 		public IActionResult CreateEmployee(EmployeeViewModel viewModel)
 		{
+			if (viewModel.SelectedSkillIds == null || !viewModel.SelectedSkillIds.Any())
+			{
+				TempData["Status"] = "error";
+				TempData["Message"] = "Please select at least one skill.";
+				viewModel.Skills = _context.Skills.ToList(); // Hata durumunda skill listesini yeniden doldur
+				return View(viewAdress + "Create/Index.cshtml", viewModel);
+			}
+
 			if (ModelState.IsValid)
 			{
-				var newEmployee = viewModel.Employee;
+				var newEmployee = new Employee
+				{
+					Name = viewModel.Employee.Name,
+					Surname = viewModel.Employee.Surname,
+					ProfileImageUrl = viewModel.Employee.ProfileImageUrl,
+					IdNumber = viewModel.Employee.IdNumber,
+					Iban = viewModel.Employee.Iban,
+					BasicWage = viewModel.Employee.BasicWage,
+					Password = viewModel.Employee.Password,
+					Skills = new List<Skill>()
+				};
 
-				// Seçilen yetenekleri ekle
 				foreach (var skillId in viewModel.SelectedSkillIds)
 				{
 					var skill = _context.Skills.FirstOrDefault(s => s.Id == skillId);
@@ -60,16 +79,28 @@ namespace BarberApp.Controllers.Admin
 					}
 				}
 
-				_context.Employees.Add(newEmployee);
-				_context.SaveChanges();
+				try
+				{
+					_context.Employees.Add(newEmployee);
+					_context.SaveChanges();
 
-				return RedirectToAction("Employees", new { status = "ok", message = "Employee created successfully!" });
+					TempData["Status"] = "ok";
+					TempData["Message"] = "Employee created successfully!";
+					return RedirectToAction("Employees");
+				}
+				catch (Exception ex)
+				{
+					TempData["Status"] = "error";
+					TempData["Message"] = $"An error occurred: {ex.Message}";
+					return View(viewAdress + "Create/Index.cshtml", viewModel);
+				}
 			}
 
 			// Eğer ModelState geçerli değilse Skills'i yeniden doldurun
 			viewModel.Skills = _context.Skills.ToList();
 			return View(viewAdress + "Create/Index.cshtml", viewModel);
 		}
+
 
 
 

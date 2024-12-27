@@ -27,7 +27,7 @@ namespace BarberApp.Controllers
             if (string.IsNullOrEmpty(customerName))
             {
                 ViewBag.ErrorMessage = "Lütfen giriş yapın.";
-                return RedirectToAction("Login", "Account");
+                return RedirectToAction("Login", "Customer");
             }
 
             // Tüm skill'leri gönderiyoruz
@@ -133,36 +133,10 @@ namespace BarberApp.Controllers
             _context.SaveChanges();
 
             ViewBag.SuccessMessage = "Randevu başarıyla oluşturuldu!";
-            return RedirectToAction("UpcomingAppointments");
+            return RedirectToAction("ActiveAppointments");
         }
 
-        // GET: Customer's upcoming appointments
-        [HttpGet]
-        public IActionResult UpcomingAppointments()
-        {
-            var customerIdString = HttpContext.Session.GetString("CustomerId");
+		
 
-            if (string.IsNullOrEmpty(customerIdString))
-            {
-                return Unauthorized("Kullanıcı oturumu bulunamadı. Lütfen tekrar giriş yapın.");
-            }
-
-            // "CustomerId" string'ini int'e dönüştürün
-            if (!int.TryParse(customerIdString, out int customerId))
-            {
-                return Unauthorized("Geçersiz müşteri kimliği. Lütfen tekrar giriş yapın.");
-            }
-            if (customerId == null)
-                return Unauthorized("Kullanıcı oturumu bulunamadı. Lütfen tekrar giriş yapın.");
-
-            var appointments = _context.Appointments
-                .Include(a => a.Employee)
-                .Include(a => a.Skill)
-                .Include(a => a.Status)
-                .Where(a => a.Customer.Id == customerId && a.Date >= DateTime.Now)
-                .ToList();
-
-            return View(appointments);
-        }
-    }
+	}
 }

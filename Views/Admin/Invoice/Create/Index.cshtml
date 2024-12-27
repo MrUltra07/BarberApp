@@ -1,0 +1,77 @@
+﻿@model BarberApp.Models.Appointment
+
+@{
+    ViewData["Title"] = "Create Invoice";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+}
+
+<div class="container mt-5 mb-5">
+    <h2 class="mb-4 text-center">Fiş Oluştur</h2>
+
+    <form asp-action="Create" method="post" class="row g-3">
+        <input type="hidden" name="appointmentId" value="@Model.Id" />
+
+        <!-- Appointment Bilgileri -->
+        <div class="col-12">
+            <h3 class="mb-3">Randevu Bilgileri</h3>
+            <div class="card">
+                <div class="card-body">
+                    <p><strong>Tarih:</strong> @Model.Date.AddHours(3).ToString("G")</p>
+                    <p><strong>Müşteri:</strong> @Model.Customer.Name</p>
+                    <p><strong>Çalışan:</strong> @Model.Employee.Name</p>
+                    <p><strong>Hizmet:</strong> @Model.Skill.Title</p>
+                    <p><strong>Fiyat:</strong> @Model.Skill.Price.ToString("C")</p>
+                    <p><strong>Süre:</strong> @Model.Skill.Duration dakika</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tip Bilgileri -->
+        <div class="col-12">
+            <h3 class="mb-3">Tip Bilgileri</h3>
+            <div class="card">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="tipAmount" class="form-label">Tip Miktarı:</label>
+                        <input type="number" id="tipAmount" name="tipAmount" class="form-control" step="0.01" placeholder="0.00" required oninput="updateEmployeeEarnings()" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hesap Özeti -->
+        <div class="col-12">
+            <h3 class="mb-3">Hesap Özeti</h3>
+            <div class="card">
+                <div class="card-body">
+                    <p><strong>Yetenek Tutarı:</strong> @((Model.Skill.Price).ToString("C"))</p>
+                    <p><strong>Toplam Çalışan Kazancı:</strong> <span id="employeeEarnings">@((Model.Skill.Bonus).ToString("C"))</span></p>
+                    <p><strong>Toplam Maliyet:</strong> @Model.Skill.Cost.ToString("C")</p>
+                    <p><strong>İşletme Kazancı:</strong> @((Model.Skill.Price - (Model.Skill.Cost + Model.Skill.Bonus)).ToString("C"))</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="col-12 text-center mb-5">
+            <button type="submit" class="btn btn-primary w-50">Fiş Oluştur</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    function updateEmployeeEarnings() {
+        // Bonus değeri (server tarafından sağlanan başlangıç değeri)
+        const initialBonus = parseFloat("@Model.Skill.Bonus");
+
+        // Kullanıcı tarafından girilen tip miktarı
+        const tipAmount = parseFloat(document.getElementById("tipAmount").value) || 0;
+
+        // Yeni toplam çalışan kazancı
+        const totalEarnings = initialBonus + tipAmount;
+
+        // Güncellenmiş toplam kazancı göster
+        document.getElementById("employeeEarnings").innerText = totalEarnings.toLocaleString('tr-TR', { style: 'currency', currency: 'TRY' });
+    }
+</script>

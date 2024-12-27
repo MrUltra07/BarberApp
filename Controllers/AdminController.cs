@@ -42,6 +42,12 @@ namespace BarberApp.Controllers
                 Console.WriteLine("deneme");
 
                 HttpContext.Session.SetString("EmployeeId", employee.Id.ToString());
+                if(employee.Skills.Any(s => s.Title == "ADMIN")){
+                    HttpContext.Session.SetString("IsAdmin", true.ToString());
+                }else
+                {
+                    HttpContext.Session.SetString("IsEmployee", true.ToString());
+                }
                 return RedirectToAction("Dashboard", "Admin");
             }
             catch (Exception ex)

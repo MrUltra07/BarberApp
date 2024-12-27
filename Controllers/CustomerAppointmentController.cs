@@ -69,14 +69,7 @@ namespace BarberApp.Controllers
                 ViewBag.Skills = _context.Skills.ToList().Where((s) => s.IsVisible==true);
                 return View("~/Views/Appointments/BookAppointment/Index.cshtml", model);
             }
-
-            // Tarih kontrolü
-            if (model.AppointmentDate < DateTime.Now)
-            {
-                ViewBag.ErrorMessage = "Geçmiş bir tarih seçilemez!";
-                ViewBag.Skills = _context.Skills.ToList().Where((s) => s.IsVisible==true);
-                return View("~/Views/Appointments/BookAppointment/Index.cshtml", model);
-            }
+            
 
             // Uygun saat kontrolü (API çağrısı)
             var client = _httpClientFactory.CreateClient();
@@ -116,9 +109,17 @@ namespace BarberApp.Controllers
                 ViewBag.Skills = _context.Skills.ToList().Where((s) => s.IsVisible == true);
                 return View("~/Views/Appointments/BookAppointment/Index.cshtml", model);
             }
-
+            // Tarih kontrolü
+            
+            if (appointmentDateTime < DateTime.Now)
+            {
+                ViewBag.ErrorMessage = "Geçmiş bir tarih seçilemez!" + model.AppointmentDate.ToString();
+                ViewBag.Skills = _context.Skills.ToList().Where((s) => s.IsVisible == true);
+                return View("~/Views/Appointments/BookAppointment/Index.cshtml", model);
+            }
             // Tarihi UTC'ye dönüştür
-            appointmentDateTime = DateTime.SpecifyKind(appointmentDateTime, DateTimeKind.Utc);
+            TimeZoneInfo utcPlus3 = TimeZoneInfo.CreateCustomTimeZone("UTC+3", TimeSpan.FromHours(3), "UTC+3", "UTC+3");
+            appointmentDateTime = TimeZoneInfo.ConvertTimeToUtc(appointmentDateTime, utcPlus3);
 
             var appointment = new Appointment
             {

@@ -1,141 +1,129 @@
-﻿using BarberApp.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
+using BarberApp.Models;
 using System.Linq;
+using System.Threading.Tasks;
 
-namespace BarberApp.Controllers.Admin
+namespace BarberApp.Controllers
 {
     [Route("admin/appointments")]
     public class AppointmentController : Controller
     {
         private readonly AppDbContext _context;
+        private static readonly string viewAdress = "~/Views/Admin/Appointment/";
 
         public AppointmentController(AppDbContext context)
         {
             _context = context;
         }
 
-        // GET: Available Slots
-        [HttpGet("available-slots")]
-        public IActionResult GetAvailableSlots(int skillId, int employeeId, DateTime date)
+        // Admin veya çalışan girişine göre randevuları listeleyen metod
+        [HttpGet]
+        public async Task<IActionResult> Index()
         {
-            // Check if the skill exists for the employee
-            var employee = _context.Employees
-                .Include(e => e.Skills)
-                .FirstOrDefault(e => e.Id == employeeId);
+            // Session'dan EmployeeId'yi al
+            var employeeIdString = HttpContext.Session.GetString("EmployeeId");
 
-            if (employee == null || !employee.Skills.Any(s => s.Id == skillId))
-                return BadRequest("Skill not available for the specified employee.");
-
-            // Get skill duration
-            var skill = _context.Skills.FirstOrDefault(s => s.Id == skillId);
-            int skillDuration = skill.Duration;
-
-            // Get employee's working hours for the given day
-            int dayIndex = (int)date.DayOfWeek;
-            var availability = _context.AvailableTimes.FirstOrDefault(a => a.DayIndex == dayIndex);
-            if (availability == null)
-                return BadRequest("No working hours found for this day.");
-
-            // Get all appointments for the employee on the given date
-            var appointments = _context.Appointments
-                .Where(a => a.Employee.Id == employeeId && a.Date.Date == date.Date)
-                .Select(a => new
-                {
-                    StartTime = a.Date.TimeOfDay,
-                    EndTime = a.Date.TimeOfDay.Add(TimeSpan.FromMinutes(a.Skill.Duration))
-                }).ToList();
-
-            // Calculate available slots
-            List<TimeSpan> availableSlots = new List<TimeSpan>();
-            TimeSpan currentStartTime = availability.StartTime;
-
-            while (currentStartTime.Add(TimeSpan.FromMinutes(skillDuration)) <= availability.EndTime)
+            if (employeeIdString == null)
             {
-                // Check if the current slot is free
-                bool isFree = appointments.All(appt =>
-                    currentStartTime >= appt.EndTime ||
-                    currentStartTime.Add(TimeSpan.FromMinutes(skillDuration)) <= appt.StartTime);
-
-                if (isFree)
-                    availableSlots.Add(currentStartTime);
-
-                // Increment by 10 minutes
-                currentStartTime = currentStartTime.Add(TimeSpan.FromMinutes(10));
+                // Eğer session'da EmployeeId yoksa, kullanıcı login sayfasına yönlendirilir
+                return RedirectToAction("Index", "Login");
             }
 
-            return Ok(availableSlots.Select(t => t.ToString("hh\\:mm")));
+            int employeeId = int.Parse(employeeIdString);
+
+            // Employee bilgilerini session'dan alınan EmployeeId ile sorgula
+            var employee = await _context.Employees
+                                         .Include(e => e.Skills)
+                                         .FirstOrDefaultAsync(e => e.Id == employeeId);
+
+            if (employee == null)
+            {
+                return NotFound(); // Çalışan bulunamadıysa
+            }
+
+            var isAdmin = employee.Skills.Any(s => s.Title == "ADMIN");
+
+            // Admin kullanıcıları tüm randevuları görebilir, çalışanlar yalnızca kendi randevularını
+            IQueryable<Appointment> appointmentsQuery;
+
+            if (isAdmin)
+            {
+                appointmentsQuery = _context.Appointments
+                                             .Include(a => a.Employee)
+                                             .Include(a => a.Customer)
+                                             .Include(a => a.Skill)
+                                             .Include(a => a.Status)
+                                             .Where(a => a.Status.Name != "Completed") // "Completed" olmayan randevuları al
+                                             .OrderByDescending(a => a.Date); // Tarihe göre sıralama (yeni tarih en üstte)
+            }
+            else
+            {
+                appointmentsQuery = _context.Appointments
+                                             .Where(a => a.Employee.Id == employee.Id && a.Status.Name != "Completed") // "Completed" olmayan randevuları al
+                                             .Include(a => a.Employee)
+                                             .Include(a => a.Customer)
+                                             .Include(a => a.Skill)
+                                             .Include(a => a.Status)
+                                             .OrderByDescending(a => a.Date); // Tarihe göre sıralama (yeni tarih en üstte)
+            }
+
+            // Randevuları al
+            var appointments = await appointmentsQuery.ToListAsync();
+
+            if (!appointments.Any())
+            {
+                ViewBag.ErrorMessage = "Hiç randevu bulunamadı.";
+            }
+
+            ViewBag.Statuses = await _context.AppointmentStatuses.ToListAsync();
+
+            return View(viewAdress + "Index.cshtml", appointments); // Direkt View'e gönder
         }
 
-        [HttpPost("create")]
-        public IActionResult CreateAppointment(int employeeId, int skillId, DateTime date, int? customerId = null)
+
+        // Status güncelleme işlemi
+        [HttpPost]
+        public async Task<IActionResult> UpdateStatus(int appointmentId, int statusId)
         {
-            // Kullanıcının rolünü veya kimliğini kontrol et
-            if (HttpContext.Session.GetString("Role") == "Customer")
-            {
-                // Eğer giriş yapan bir müşteri ise, session'dan müşteri kimliğini alın
-                var sessionCustomerId = HttpContext.Session.GetInt32("CustomerId");
-                if (sessionCustomerId == null)
-                    return Unauthorized("Customer session expired or not logged in.");
+            var appointment = await _context.Appointments
+                                             .Include(a => a.Status)
+                                             .FirstOrDefaultAsync(a => a.Id == appointmentId);
 
-                customerId = sessionCustomerId.Value;
-            }
-            else if (HttpContext.Session.GetString("Role") != "Admin")
-            {
-                // Eğer giriş yapan admin değilse ve müşteri kimliği yoksa hata döndür
-                return Unauthorized("You are not authorized to create appointments.");
-            }
-
-            // Müşteri kontrolü
-            var customer = _context.Customers.FirstOrDefault(c => c.Id == customerId);
-            if (customer == null)
-                return BadRequest("Invalid customer.");
-
-            // Çalışan ve beceri kontrolü
-            var employee = _context.Employees.Include(e => e.Skills).FirstOrDefault(e => e.Id == employeeId);
-            var skill = _context.Skills.FirstOrDefault(s => s.Id == skillId);
-            var status = _context.AppointmentStatuses.FirstOrDefault(s => s.Name == "Request");
-
-            if (employee == null || skill == null || status == null)
-                return BadRequest("Invalid employee, skill, or status.");
-
-            if (!employee.Skills.Any(s => s.Id == skillId))
-                return BadRequest("Skill not available for the specified employee.");
-
-            // Randevu oluşturma
-            var appointment = new Appointment
-            {
-                Date = date,
-                Customer = customer,
-                Employee = employee,
-                Skill = skill,
-                Status = status
-            };
-
-            _context.Appointments.Add(appointment);
-            _context.SaveChanges();
-
-            return Ok("Appointment created successfully.");
-        }
-
-        // POST: Update Appointment Status
-        [HttpPost("update-status")]
-        public IActionResult UpdateAppointmentStatus(int appointmentId, string statusName)
-        {
-            var appointment = _context.Appointments.Include(a => a.Status).FirstOrDefault(a => a.Id == appointmentId);
             if (appointment == null)
-                return NotFound("Appointment not found.");
+            {
+                return NotFound();
+            }
 
-            var newStatus = _context.AppointmentStatuses.FirstOrDefault(s => s.Name == statusName);
-            if (newStatus == null)
-                return BadRequest("Invalid status.");
+            // Eğer randevu tamamlanmışsa, başka bir sayfaya yönlendir
+            if (appointment.Status.Name == "Completed")
+            {
+                // Randevu tamamlanmışsa, başka bir sayfaya yönlendir
+                return RedirectToAction("CompletedAppointments", "Appointment");
+            }
 
-            appointment.Status = newStatus;
-            _context.SaveChanges();
+            // Durumu güncelle
+            var status = await _context.AppointmentStatuses.FindAsync(statusId);
+            if (status != null)
+            {
+                if(status.Name == "Completed")
+                {
+                    return RedirectToAction("CompletedAppointments", "Appointment");
 
-            return Ok("Appointment status updated successfully.");
+                }
+                appointment.Status = status;
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(Index)); // Sayfayı yenile
+        }
+
+        // Completed statüsündeki randevular için bir yönlendirme sayfası
+        [HttpGet("completed-appointments")]
+        public IActionResult CompletedAppointments()
+        {
+            return View(); // Tamamlanmış randevular için yönlendirme yapılacak başka bir sayfa (view)
         }
     }
 }
+

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<BarberApp.Models.Appointment>
+@{
+    ViewData["Title"] = "Appointments";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Appointments</h1>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Employee</th>
+            <th>Customer</th>
+            <th>Customer Phone Number</th>
+            <th>Skill</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var appointment in Model)
+        {
+            <tr>
+                <td>@appointment.Employee.Name</td>
+                <td>@appointment.Customer.Name</td>
+                <td>@appointment.Customer.PhoneNumber</td>
+                <td>@appointment.Skill.Title</td>
+                <td>@appointment.Date.ToString("g")</td>
+                <td>
+                    <form method="post" action="@Url.Action("UpdateStatus", "Appointment")">
+                        <input type="hidden" name="appointmentId" value="@appointment.Id" />
+                        <select name="statusId" asp-for="@appointment.Status.Id" class="form-control" onchange="this.form.submit()">
+                            @foreach (var status in ViewBag.Statuses as IEnumerable<BarberApp.Models.AppointmentStatus>)
+                            {
+                                <option value="@status.Id" >
+                                    @status.Name
+                                </option>
+                            }
+                        </select>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

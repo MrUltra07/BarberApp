@@ -24,30 +24,28 @@ public class RoleBasedAuthorizationMiddleware
             return;
         }
 
+       
+
         // Admin ve çalışanların erişebileceği yollar
         if (path.StartsWithSegments("/admin/appointments") || path.StartsWithSegments("/admin/dashboard"))
         {
-            if (string.IsNullOrEmpty(employeeId) || (!isAdmin && !isEmployee))
-            {
-                context.Response.Redirect("/admin/login");
-                return;
-            }
+            await _next(context);
+            return; // Erişim izni ver, devam et
         }
 
         // Diğer admin yolları için sadece adminler erişebilir
-        if (path.StartsWithSegments("/admin/settings") || path.StartsWithSegments("/admin/users") || path.StartsWithSegments("/admin/invoice") || path.StartsWithSegments("/admin/invoice") || path.StartsWithSegments("/admin/skills")
-            || path.StartsWithSegments("/admin/employees") || path.StartsWithSegments("/admin/generalSettings") || path.StartsWithSegments("/admin/availability"))
+        if (path.StartsWithSegments("/admin/settings") || path.StartsWithSegments("/admin/users") || path.StartsWithSegments("/admin/slider") ||
+            path.StartsWithSegments("/admin/invoice") || path.StartsWithSegments("/admin/skills") || path.StartsWithSegments("/admin/employees") || path.StartsWithSegments("/admin/generalSettings") ||
+            path.StartsWithSegments("/admin/availability"))
         {
-            if (string.IsNullOrEmpty(employeeId) || !isAdmin)
+            if (!isAdmin) // Eğer kullanıcı admin değilse
             {
-                context.Response.Redirect("/admin/login");
+                context.Response.Redirect("/admin/login?"+isAdmin);
                 return;
             }
         }
 
-        // Oturum açmamış kullanıcılar için varsayılan yönlendirme
-        
-
         await _next(context);
     }
+
 }

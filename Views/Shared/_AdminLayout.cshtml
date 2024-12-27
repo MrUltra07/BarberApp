@@ -1,5 +1,4 @@
 ﻿@RenderSection("Scripts", required: false)
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,6 +39,14 @@
         #topbar .navbar-brand:hover {
             color: #adb5bd;
         }
+
+        /* Uyarı mesajı için stil */
+        .alert-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1050; /* Bootstrap modal ve diğer içeriklerin üstünde görünmesi için */
+        }
     </style>
 </head>
 <body>
@@ -47,23 +54,24 @@
     {
         var status = TempData["Status"].ToString();
         var message = TempData["Message"].ToString();
-        <div class="alert @(status == "ok" ? "alert-success" : "alert-danger")" role="alert">
-            @message
-        </div>
+            <div class="alert-container">
+                <div class="alert @(status == "ok" ? "alert-success" : "alert-danger")" role="alert" id="alertMessage">
+                @message
+                </div>
+            </div>
     }
     @if (TempData["Errors"] != null)
     {
-        <div class="alert alert-danger">
-            <strong>Validation Errors:</strong>
-            <ul>
+            <div class="alert alert-danger">
+                <strong>Validation Errors:</strong>
+                <ul>
                 @foreach (var error in TempData["Errors"].ToString().Split("<br>"))
                 {
-                    <li>@Html.Raw(error)</li>
+                            <li>@Html.Raw(error)</li>
                 }
-            </ul>
-        </div>
+                </ul>
+            </div>
     }
-
 
     <!-- Sidebar -->
     <div id="sidebar" class="d-flex flex-column">
@@ -89,12 +97,6 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/admin/sliders">Slider</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/admin/users">Users</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/admin/reports">Reports</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/admin/generalSettings/">General Settings</a>
@@ -132,10 +134,18 @@
     <script>
         const toggleSidebarButton = document.getElementById('toggleSidebar');
         const sidebar = document.getElementById('sidebar');
+        const alertMessage = document.getElementById('alertMessage');
 
         toggleSidebarButton.addEventListener('click', () => {
             sidebar.classList.toggle('d-none');
         });
+
+        // Eğer uyarı mesajı varsa, 3 saniye sonra kaybolmasını sağla
+        if (alertMessage) {
+            setTimeout(() => {
+                alertMessage.style.display = 'none';
+            }, 3000);
+        }
     </script>
 </body>
 </html>

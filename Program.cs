@@ -45,9 +45,9 @@ app.UseRouting();
 
 app.UseSession();        // Session middleware
 app.UseAuthentication(); // Authentication middleware
-app.UseAuthorization();  // Authorization middleware
 
 app.UseMiddleware<RoleBasedAuthorizationMiddleware>(); // Custom middleware
+app.UseAuthorization();  // Authorization middleware
 
 app.MapControllerRoute(
     name: "default",

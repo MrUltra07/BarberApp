@@ -27,10 +27,10 @@ namespace BarberApp.Models
                 Name = "Admin",
                 Surname = "User",
                 ProfileImageUrl = "default.png",
-                IdNumber = "00000000000",
+                IdNumber = "b221210029@sakarya.edu.tr",
                 Iban = "TR000000000000000000000000",
                 BasicWage = 5000,
-                Password = "admin123"
+                Password = "sau"
             });
 
             // Admin Skill

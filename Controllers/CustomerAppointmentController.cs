@@ -134,7 +134,7 @@ namespace BarberApp.Controllers
             _context.SaveChanges();
 
             ViewBag.SuccessMessage = "Randevu başarıyla oluşturuldu!";
-            return RedirectToAction("ActiveAppointments");
+            return RedirectToAction("ActiveAppointments", "Appointments");
         }
 
 		

@@ -26,11 +26,13 @@ namespace BarberApp.Controllers.Admin
 		[HttpGet("skills/create")]
 		public IActionResult CreateSkill()
 		{
-			return View(viewAdress + "Create/Index.cshtml"); // CreateSkill.cshtml dosyasını döner
+			var skill = new Skill();
+			return View(viewAdress + "Create/Index.cshtml", skill); // CreateSkill.cshtml dosyasını döner
 		}
 		[HttpPost("skills/create")]
 		public IActionResult CreateSkill(Skill newSkill)
 		{
+
 			if (ModelState.IsValid)
 			{
 				_context.Skills.Add(newSkill);
@@ -75,5 +77,21 @@ namespace BarberApp.Controllers.Admin
 
 			return RedirectToAction("skills"); // Listeleme sayfasına yönlendir
 		}
-	}
+        [HttpGet("Skills/Delete/{id}")]
+        public IActionResult DeleteSkill(int id)
+        {
+            // İlgili Skill'i veritabanından al
+            var skill = _context.Skills.FirstOrDefault(s => s.Id == id);
+            if (skill == null)
+            {
+                return NotFound(); // Eğer ID bulunamazsa 404 döndür
+            }
+
+            // Skill'i veritabanından sil
+            _context.Skills.Remove(skill);
+            _context.SaveChanges(); // Değişiklikleri kaydet
+
+            return RedirectToAction("skills"); // Listeleme sayfasına yönlendir
+        }
+    }
 }

@@ -10,37 +10,37 @@
 <form method="post" action="/admin/employees/create">
     <div class="mb-3">
         <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name" name="Employee.Name" value="@Model.Employee.Name" required>
+        <input type="text" class="form-control" id="name" name="Employee.Name"  required>
     </div>
 
     <div class="mb-3">
         <label for="surname" class="form-label">Surname</label>
-        <input type="text" class="form-control" id="surname" name="Employee.Surname" value="@Model.Employee.Surname" required>
+        <input type="text" class="form-control" id="surname" name="Employee.Surname"  required>
     </div>
 
     <div class="mb-3">
         <label for="profileImageUrl" class="form-label">Profile Image URL</label>
-        <input type="text" class="form-control" id="profileImageUrl" name="Employee.ProfileImageUrl" value="@Model.Employee.ProfileImageUrl" required>
+        <input type="text" class="form-control" id="profileImageUrl" name="Employee.ProfileImageUrl"  required>
     </div>
 
     <div class="mb-3">
         <label for="idNumber" class="form-label">ID Number</label>
-        <input type="text" class="form-control" id="idNumber" name="Employee.IdNumber" value="@Model.Employee.IdNumber" required>
+        <input type="text" class="form-control" id="idNumber" name="Employee.IdNumber"  required>
     </div>
 
     <div class="mb-3">
         <label for="iban" class="form-label">IBAN</label>
-        <input type="text" class="form-control" id="iban" name="Employee.Iban" value="@Model.Employee.Iban" required>
+        <input type="text" class="form-control" id="iban" name="Employee.Iban"  required>
     </div>
 
     <div class="mb-3">
         <label for="basicWage" class="form-label">Basic Wage</label>
-        <input type="number" class="form-control" id="basicWage" name="Employee.BasicWage" value="@Model.Employee.BasicWage" step="0.01" required>
+        <input type="number" class="form-control" id="basicWage" name="Employee.BasicWage"  step="0.01" required>
     </div>
 
     <div class="mb-3">
         <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" name="Employee.Password" value="@Model.Employee.Password" required>
+        <input type="password" class="form-control" id="password" name="Employee.Password"  required>
     </div>
 
     <div class="mb-3">
@@ -51,23 +51,17 @@
                 <div class="form-check">
                     <input class="form-check-input"
                            type="checkbox"
-                           name="Employee.SelectedSkillIds"
+                           name="SelectedSkillIds"
                            value="@skill.Id"
                            id="skill_@skill.Id"
-                    @(Model.SelectedSkillIds != null && Model.SelectedSkillIds.Contains(skill.Id) ? "checked" : "")>
+                    )>
                     <label class="form-check-label" for="skill_@skill.Id">@skill.Title</label>
                 </div>
             }
         </div>
-        @if (ViewData.ModelState["Employee.SelectedSkillIds"]?.Errors?.Count > 0)
-        {
-            <div class="text-danger">
-                @ViewData.ModelState["Employee.SelectedSkillIds"].Errors.First().ErrorMessage
-            </div>
-        }
     </div>
 
 
-    <button type="submit" class="btn btn-success">Create</button>
+    <button type="submit" class="btn btn-success">Save</button>
     <a href="/admin/employees" class="btn btn-secondary">Cancel</a>
 </form>

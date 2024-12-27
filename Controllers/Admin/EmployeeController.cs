@@ -56,8 +56,7 @@ namespace BarberApp.Controllers.Admin
 				return View(viewAdress + "Create/Index.cshtml", viewModel);
 			}
 
-			if (ModelState.IsValid)
-			{
+			
 				var newEmployee = new Employee
 				{
 					Name = viewModel.Employee.Name,
@@ -94,11 +93,9 @@ namespace BarberApp.Controllers.Admin
 					TempData["Message"] = $"An error occurred: {ex.Message}";
 					return View(viewAdress + "Create/Index.cshtml", viewModel);
 				}
-			}
+			
 
-			// Eğer ModelState geçerli değilse Skills'i yeniden doldurun
-			viewModel.Skills = _context.Skills.ToList();
-			return View(viewAdress + "Create/Index.cshtml", viewModel);
+			
 		}
 
 

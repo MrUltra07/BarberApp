@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BarberApp.Models;
+using System.Data.Entity;
 namespace BarberApp.Controllers
 {
     [Route("admin")]
@@ -16,8 +17,11 @@ namespace BarberApp.Controllers
         public IActionResult Login()
         {
             if (HttpContext.Session.GetString("EmployeeId") != null)
+
             {
-                return RedirectToAction("Dashboard", "Admin");
+                var IsAdminString = HttpContext.Session.GetString("IsAdmin");
+
+                return RedirectToAction("Dashboard", "Admin", new { isAdmin = IsAdminString });
             }
 
             // View'in tam yolunu belirtin
@@ -29,31 +33,69 @@ namespace BarberApp.Controllers
         {
             try
             {
-                var employee = _context.Employees
-                    .FirstOrDefault(e => e.IdNumber == idNumber && e.Password == password);
+                var employee = _context.Employees.Select(
+                    e => new
+                    {
+                        e.Id,
+                        e.IdNumber,
+                        e.Password,
+                        e.Name,
+                        e.Surname,
+                        Skills = e.Skills.Select(skill => skill.Title).ToList()
+                    })
+                    .FirstOrDefault(e => e.IdNumber == idNumber && e.Password == password); // Şifrelenmiş şifre kontrolü önerilir.
 
                 if (employee == null)
                 {
-                    ViewBag.ErrorMessage = "Geçersiz kimlik bilgileri.";
+                    ViewBag.ErrorMessage = "Giriş başarısız: Lütfen kimlik bilgilerinizi kontrol edin.";
                     return View("Login/Index");
                 }
-                Console.WriteLine("deneme");
-                Console.WriteLine(password, idNumber);
-                Console.WriteLine("deneme");
 
+                // Oturum bilgilerini ayarla
                 HttpContext.Session.SetString("EmployeeId", employee.Id.ToString());
-                if(employee.Skills.Any(s => s.Title == "ADMIN")){
-                    HttpContext.Session.SetString("IsAdmin", true.ToString());
-                }else
+                var adminDetails = _context.Employees
+                .Select(e => new
                 {
-                    HttpContext.Session.SetString("IsEmployee", true.ToString());
+                    e.Name,
+                    e.Surname,
+                    Skills = e.Skills.Select(skill => skill.Title).ToList()
+                })
+                .ToList();
+                if (employee.Skills.Any(s => s == "ADMIN"))
+                {
+                    HttpContext.Session.SetString("IsAdmin", "true");
                 }
-                return RedirectToAction("Dashboard", "Admin");
+                else
+                {
+                    if(employee == null)
+                    {
+                        HttpContext.Session.SetString("IsAdmin", "falsenull");
+
+                    }
+                    else
+                    {
+
+                        var skillTitles = "ses";
+                        foreach (var skill in employee.Skills)
+                        {
+                            skillTitles += skill + "-";
+                        }
+
+                        HttpContext.Session.SetString("IsAdmin", "false" + skillTitles + " " + employee.Name);
+
+                    }
+                    HttpContext.Session.SetString("IsEmployee", "true");
+
+                }
+                var IsAdminString = HttpContext.Session.GetString("IsAdmin");
+                return RedirectToAction("Dashboard", "Admin", new {isAdmin=IsAdminString});
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Hata: {ex.Message}");
-                throw;
+                // Hata loglaması
+                Console.WriteLine($"Hata: {ex.Message}"); // Burada bir loglama kütüphanesi kullanmanız önerilir.
+                ViewBag.ErrorMessage = "Bir hata oluştu. Lütfen tekrar deneyin."; // Kullanıcıya bir hata mesajı döndür.
+                return View("Login/Index"); // Hata durumunda tekrar giriş sayfasına döndür.
             }
         }
 
@@ -69,17 +111,7 @@ namespace BarberApp.Controllers
         public IActionResult Dashboard()
         {
             // Oturumdaki Employee ID'yi al
-            var employeeId = int.Parse(HttpContext.Session.GetString("EmployeeId") ?? "0");
-
-            // Kullanıcının Admin olup olmadığını kontrol edin
-            if (!_context.Employees
-                         .Any(e => e.Id == employeeId && e.Skills.Any(s => s.Title == "ADMIN")))
-                         //.Any(e => e.Id == employeeId))
-            {
-
-                return Forbid(); // Yetkisiz erişim
-            }
-
+            
             // Admin sayfasında görüntülenecek veriler
             var adminDetails = _context.Employees
                 .Select(e => new

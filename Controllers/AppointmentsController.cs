@@ -89,106 +89,98 @@ namespace BarberApp.Controllers
 		[HttpGet]
 		public IActionResult PastAppointments()
 		{
-			var customerId = HttpContext.Session.GetString("CustomerId");
-			if (string.IsNullOrEmpty(customerId))
+			var customerIdString = HttpContext.Session.GetString("CustomerId");
+
+			if (string.IsNullOrEmpty(customerIdString) || !int.TryParse(customerIdString, out int customerId))
 			{
 				return RedirectToAction("Login", "Customer");
 			}
 
-			var pastAppointments = _context.Appointments
-				.Where(a => a.Customer.Id == int.Parse(customerId))
-				.Include(a => a.Employee)
-				.Include(a => a.Skill)
-				.Include(a => a.Status)
+			var completedAppointments = _context.Appointments
+				.Where(a => a.Customer.Id == customerId && (a.Status.Id== 3 || a.Status.Id == 3)) // StatusId'si 4 olan randevular
+				.Include(a => a.Employee)    // Çalışan bilgisi
+				.Include(a => a.Skill)       // Yetenek bilgisi
+				.Include(a => a.Status)      // Durum bilgisi
+				.OrderByDescending(a => a.Date) // Tarihe göre sıralama (en yeni üstte)
 				.ToList();
 
-			return View("PastAppointments/Index");
+			if (completedAppointments == null || !completedAppointments.Any())
+			{
+				ViewBag.Message = "Geçmiş randevunuz bulunmamaktadır.";
+			}
+
+			return View("PastAppointments/Index", completedAppointments);
 		}
+
+
+
 
 		[HttpGet]
 		public IActionResult ActiveAppointments()
 		{
 			var customerIdString = HttpContext.Session.GetString("CustomerId");
 
-			if (string.IsNullOrEmpty(customerIdString))
+			if (string.IsNullOrEmpty(customerIdString) || !int.TryParse(customerIdString, out int customerId))
 			{
 				return Unauthorized("Kullanıcı oturumu bulunamadı. Lütfen tekrar giriş yapın.");
-			}
-
-			if (!int.TryParse(customerIdString, out int customerId))
-			{
-				return Unauthorized("Geçersiz müşteri kimliği. Lütfen tekrar giriş yapın.");
 			}
 
 			var appointments = _context.Appointments
 				.Include(a => a.Employee)   // Çalışan bilgisi
 				.Include(a => a.Skill)      // Yetenek bilgisi
 				.Include(a => a.Status)     // Durum bilgisi
-				.Where(a => a.Customer.Id == customerId && a.Date >= DateTime.UtcNow) // Gelecekteki randevular
+				.Where(a => a.Customer.Id == customerId
+							&& a.Status.Name == "Request" // Sadece "Request" durumundaki randevular
+							&& a.Date >= DateTime.UtcNow) // Gelecekteki randevular
 				.OrderBy(a => a.Date) // Tarihe göre sıralama
 				.ToList();
 
-			if (appointments == null || !appointments.Any())
+			if (!appointments.Any())
 			{
 				ViewBag.Message = "Aktif randevularınız bulunmamaktadır.";
 			}
 
-			// Aktif randevuları View'a iletmek için Model olarak gönderiyoruz
 			return View("~/Views/Appointments/ActiveAppointments/Index.cshtml", appointments);
 		}
 
+
+		[HttpPost]
 		public async Task<IActionResult> CancelAppointment(int id)
 		{
-			// Kullanıcının kimlik bilgisi oturumdan alınıyor
 			var customerIdString = HttpContext.Session.GetString("CustomerId");
 
-			if (string.IsNullOrEmpty(customerIdString))
+			if (string.IsNullOrEmpty(customerIdString) || !int.TryParse(customerIdString, out int customerId))
 			{
-				return Unauthorized("Kullanıcı oturumu bulunamadı. Lütfen tekrar giriş yapın.");
+				return BadRequest("Oturum bulunamadı veya geçersiz müşteri kimliği.");
 			}
 
-			if (!int.TryParse(customerIdString, out int customerId))
-			{
-				return Unauthorized("Geçersiz müşteri kimliği. Lütfen tekrar giriş yapın.");
-			}
-
-			// Randevu bulunuyor
 			var appointment = await _context.Appointments
 				.Include(a => a.Status)
 				.FirstOrDefaultAsync(a => a.Id == id && a.Customer.Id == customerId);
 
 			if (appointment == null)
 			{
-				TempData["ErrorMessage"] = "Belirtilen randevu bulunamadı veya bu randevuya erişim izniniz yok.";
-				return RedirectToAction("ActiveAppointments", "Appointments");
+				return NotFound("Randevu bulunamadı veya erişim yetkiniz yok.");
 			}
 
-			if (appointment.Status != null && appointment.Status.Name == "Request")
+			if (appointment.Status.Name == "Request")
 			{
-				var cancelledStatus = _context.AppointmentStatuses
-					.FirstOrDefault(s => s.Name == "Cancelled");
+				var cancelledStatus = await _context.AppointmentStatuses
+					.FirstOrDefaultAsync(s => s.Name == "Cancelled");
 
 				if (cancelledStatus != null)
 				{
 					appointment.Status = cancelledStatus;
 					_context.Appointments.Update(appointment);
 					await _context.SaveChangesAsync();
-
-					TempData["SuccessMessage"] = "Randevunuz başarıyla iptal edilmiştir.";
-				}
-				else
-				{
-					TempData["ErrorMessage"] = "İptal durumu bulunamadı.";
+					return Ok();
 				}
 			}
-			else
-			{
-				TempData["ErrorMessage"] = "Randevu durumu zaten iptal edilmiştir veya geçerli değil.";
-			}
 
-			// Aktif randevuları listele ve ActiveAppointments view'ına yönlendir
-			return RedirectToAction("ActiveAppointments", "Appointments");
+			return BadRequest("Randevu iptal edilemedi.");
 		}
+
+
 
 
 	}

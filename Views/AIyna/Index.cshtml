@@ -1,0 +1,253 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Eğer bir layout kullanıyorsanız.
+}
+
+<div class="container mt-5">
+    <h1 class="text-center">AIyna - AI Powered Mirror</h1>
+    <div class="d-flex">
+        <div class="text-center mt-3">
+            <!-- Video ve Canvas Elementleri -->
+            <h2>Your Camera</h2>
+
+            <video id="cameraStream" autoplay playsinline class="border rounded" style="max-width: 100%;"></video>
+            <canvas id="capturedImage" class="border rounded d-none" style="max-width: 100%;"></canvas>
+        </div>
+        <div id="resultContainer" class="text-center mt-3 d-none">
+            <h2>Result Image</h2>
+            <img id="resultImage" class="img-fluid" alt="Result Image">
+        </div>
+    </div>
+    
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <label for="hairStyle" class="form-label">Select Hairstyle</label>
+            <select id="hairStyle" class="form-select">
+                <option value="BuzzCut">Buzz Cut</option>
+                <option value="UnderCut">UnderCut</option>
+                <option value="Pompadour">Pompadour</option>
+                <option value="SlickBack">Slick Back</option>
+                <option value="CurlyShag">Curly Shag</option>
+                <option value="WavyShag">Wavy Shag</option>
+                <option value="FauxHawk">Faux Hawk</option>
+                <option value="Spiky">Spiky</option>
+                <option value="CombOver">Comb-over</option>
+                <option value="HighTightFade">High and Tight Fade</option>
+                <option value="ManBun">Man Bun</option>
+                <option value="Afro">Afro</option>
+                <option value="LowFade">Low Fade</option>
+                <option value="UndercutLongHair">Undercut With Long Hair</option>
+                <option value="TwoBlockHaircut">Two Block Haircut</option>
+                <option value="TexturedFringe">Textured Fringe</option>
+                <option value="BluntBowlCut">Blunt Bowl Cut</option>
+                <option value="LongWavyCurtainBangs">Long Wavy Curtain Bangs</option>
+                <option value="MessyTousled">Messy Tousled</option>
+                <option value="MediumLengthWavy">Medium Length Wavy</option>
+                <option value="CornrowBraids">Cornrow Braids</option>
+                <option value="LongHairTiedUp">Long Hair Tied Up</option>
+                <option value="Middle-parted">Middle-parted</option>
+                <option value="Women's Hairstyle">Women's Hairstyle</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label for="hairColor" class="form-label">Select Hair Color</label>
+            <select id="hairColor" class="form-select">
+                <option value="blonde">Blonde</option>
+                <option value="platinumBlonde">Platinum Blonde</option>
+                <option value="brown">Brown</option>
+                <option value="lightBrown">Light Brown</option>
+                <option value="blue">Blue</option>
+                <option value="lightBlue">Light Blue</option>
+                <option value="purple">Purple</option>
+                <option value="lightPurple">Light Purple</option>
+                <option value="pink">Pink</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="grey">Grey</option>
+                <option value="silver">Silver</option>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="green">Green</option>
+                <option value="gradient">Gradient</option>
+                <option value="multicolored">Multicolored</option>
+                <option value="darkBlue">Dark Blue</option>
+                <option value="burgundy">Burgundy</option>
+                <option value="darkGreen">Dark Green</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <!-- Butonlar -->
+        <button id="captureButton" class="btn btn-primary me-2">Capture</button>
+        <button id="sendButton" class="btn btn-success d-none">Send to AI</button>
+        <button id="resetButton" class="btn btn-secondary d-none">Reset</button>
+    </div>
+    <div id="errorMessage" class="alert alert-danger mt-3 d-none" role="alert">
+        Error processing the image. Please try again.
+    </div>
+    <div id="resultContainer" class="text-center mt-3 d-none">
+        <h2>Result Image</h2>
+        <img id="resultImage" class="img-fluid" alt="Result Image">
+    </div>
+</div>
+
+<script>
+    const cameraStream = document.getElementById('cameraStream');
+    const captureButton = document.getElementById('captureButton');
+    const sendButton = document.getElementById('sendButton');
+    const resetButton = document.getElementById('resetButton');
+    const capturedImage = document.getElementById('capturedImage');
+    const errorMessage = document.getElementById('errorMessage');
+    const hairStyle = document.getElementById('hairStyle');
+    const hairColor = document.getElementById('hairColor');
+    const resultContainer = document.getElementById('resultContainer');
+    const resultImage = document.getElementById('resultImage');
+
+    let stream = null;
+
+    // Kamerayı başlat
+    async function startCamera() {
+        try {
+            stream = await navigator.mediaDevices.getUserMedia({ video: true });
+            cameraStream.srcObject = stream;
+        } catch (error) {
+            alert('Unable to access the camera. Please check your browser settings.');
+        }
+    }
+
+    // Fotoğraf çekme işlemi
+    captureButton.addEventListener('click', () => {
+        const context = capturedImage.getContext('2d');
+        capturedImage.width = cameraStream.videoWidth;
+        capturedImage.height = cameraStream.videoHeight;
+        context.drawImage(cameraStream, 0, 0, cameraStream.videoWidth, cameraStream.videoHeight);
+
+        // Kamera akışını durdur
+        stream.getTracks().forEach(track => track.stop());
+        cameraStream.classList.add('d-none');
+        capturedImage.classList.remove('d-none');
+
+        sendButton.classList.remove('d-none');
+        resetButton.classList.remove('d-none');
+        captureButton.classList.add('d-none');
+    });
+
+    // Fotoğrafı API'ye gönder
+    // Fotoğrafı API'ye gönder
+    sendButton.addEventListener('click', async () => {
+        const formData = new FormData();
+        formData.append('task_type', 'async');
+
+        // Blob olarak görüntü verisini al
+        capturedImage.toBlob(async (blob) => {
+            if (blob) {
+                formData.append('image', blob, 'capturedImage.jpg'); // Blob'u ekleyin
+                formData.append('hair_style', hairStyle.value);
+                formData.append('color', hairColor.value);
+
+                const url = 'https://hairstyle-changer-pro.p.rapidapi.com/facebody/editing/hairstyle-pro';
+                const options = {
+                    method: 'POST',
+                    headers: {
+                        'x-rapidapi-key': '36d444af4cmsh73f0f6821260de2p1cdad1jsnc8b30fc73655',
+                        'x-rapidapi-host': 'hairstyle-changer-pro.p.rapidapi.com',
+                    },
+                    body: formData
+                };
+
+                try {
+                    const response = await fetch(url, options);
+                    if (!response.ok) throw new Error('API request failed');
+                    const result = await response.json();
+
+                    // Task ID'yi al
+                    const taskId = result.task_id;
+
+                    // Yükleniyor göstergesi
+                    const loadingMessage = document.createElement('div');
+                    loadingMessage.textContent = "Yükleniyor... Lütfen bekleyin.";
+                    loadingMessage.classList.add('alert', 'alert-info');
+                    document.body.appendChild(loadingMessage);
+
+                    // Task sonucu için API'den veri çek
+                    await fetchTaskResult(taskId, loadingMessage);
+                } catch (error) {
+                    console.error(error);
+                    errorMessage.classList.remove('d-none');
+                }
+            } else {
+                console.error('Blob oluşturulamadı.');
+                errorMessage.classList.remove('d-none');
+            }
+        }, 'image/jpeg'); // Format olarak JPEG belirtin
+    });
+
+    // Task sonucunu almak için fonksiyon
+    async function fetchTaskResult(taskId, loadingMessage) {
+        const url = `https://hairstyle-changer-pro.p.rapidapi.com/api/rapidapi/query-async-task-result?task_id=${taskId}`;
+        const options = {
+            method: 'GET',
+            headers: {
+                'x-rapidapi-key': '36d444af4cmsh73f0f6821260de2p1cdad1jsnc8b30fc73655',
+                'x-rapidapi-host': 'hairstyle-changer-pro.p.rapidapi.com',
+            }
+        };
+
+        try {
+            let taskStatus = 0;
+            let result; // result burada tanımlanıyor
+            do {
+                const response = await fetch(url, options);
+                if (!response.ok) throw new Error('Failed to fetch task result');
+                result = await response.json(); // result burada atanıyor
+                taskStatus = result.task_status;
+
+                // Eğer task_status 0 veya 1 ise, 30 saniye bekle ve tekrar dene
+                if (taskStatus === 0 || taskStatus === 1) {
+                    await new Promise(resolve => setTimeout(resolve, 30000)); // 30 saniye bekle
+                }
+
+            } while (taskStatus === 0 || taskStatus === 1);
+
+            // Yükleniyor mesajını kaldır
+            loadingMessage.remove();
+
+            // Sonuç resmini göster
+            if (taskStatus === 2) {
+                // Gelen sonucu kontrol et
+                if (result && result.data && Array.isArray(result.data.images) && result.data.images.length > 0) {
+                    resultImage.src = result.data.images[0]; // İlk resmi kullan
+                    resultContainer.classList.remove('d-none');
+                } else {
+                    console.error('Image not found in result');
+                    errorMessage.classList.remove('d-none');
+                }
+            } else {
+                console.error('Unexpected task status:', taskStatus);
+                errorMessage.classList.remove('d-none');
+            }
+        } catch (error) {
+            console.error('Error:', error.message);
+            errorMessage.classList.remove('d-none');
+        }
+    }
+
+
+    
+    // Yeniden başlatma işlemi
+    resetButton.addEventListener('click', () => {
+        capturedImage.classList.add('d-none');
+        cameraStream.classList.remove('d-none');
+        sendButton.classList.add('d-none');
+        resetButton.classList.add('d-none');
+        captureButton.classList.remove('d-none');
+        resultContainer.classList.add('d-none');
+        errorMessage.classList.add('d-none');
+        startCamera(); // Yeniden kamerayı başlat
+    });
+
+    // Uygulamayı başlat
+    startCamera();
+</script>

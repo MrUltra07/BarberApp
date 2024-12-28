@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BarberApp.Models;
+using BarberApp.ViewModels;
 using System.Data.Entity;
+using System.Security.Claims;
 namespace BarberApp.Controllers
 {
     [Route("admin")]
@@ -110,22 +112,137 @@ namespace BarberApp.Controllers
         [HttpGet("dashboard")]
         public IActionResult Dashboard()
         {
-            // Oturumdaki Employee ID'yi al
-            
-            // Admin sayfasında görüntülenecek veriler
-            var adminDetails = _context.Employees
-                .Select(e => new
+            // Kullanıcının rolünü kontrol edin
+            var isAdmin = HttpContext.Session.GetString("IsAdmin") == "true";
+            // Geçerli tarih bilgisi
+            var currentDate = DateTime.UtcNow;
+
+            // Randevu ve kazanç verilerini çekme
+            var appointmentsQuery = _context.Invoices
+                .Where(i => i.Appointment.Date >= currentDate.AddMonths(-12) && i.Appointment.Date <= currentDate);
+
+            // Eğer admin değilse sadece o anki employeeId'ye sahip olan randevuları al
+            if (!isAdmin)
+            {
+                var employeeId = Int32.Parse(HttpContext.Session.GetString("EmployeeId"));
+                appointmentsQuery = appointmentsQuery.Where(i => i.Appointment.Employee.Id == employeeId);
+            }
+
+            var appointments = appointmentsQuery
+            .GroupBy(i => new { Year = i.Appointment.Date.Year, Month = i.Appointment.Date.Month })
+            .Select(g => new AppointmentViewModel
+            {
+                MonthYear = new DateTime(g.Key.Year, g.Key.Month, 1).ToString("MMMM yyyy"),
+                TotalIncome = isAdmin
+                    ? g.Sum(i => i.Appointment.Skill.Price) - g.Sum(i => i.Appointment.Skill.Bonus) - g.Sum(i => i.Appointment.Skill.Cost)
+                    : g.Sum(i => i.TipAmount) + g.Sum(i => i.Appointment.Skill.Bonus), // Çalışan kazancı
+                EmployeeId = g.FirstOrDefault().Appointment.Employee.Id,
+                IsAdmin = isAdmin, // IsAdmin bilgisini ekle
+                KazancData = g.Select(i => new KazancDataViewModel
                 {
-                    e.Name,
-                    e.Surname,
-                    Skills = e.Skills.Select(skill => skill.Title).ToList()
+                    SkillName = i.Appointment.Skill.Title,
+                    Kazanc = isAdmin
+                        ? (i.Appointment.Skill.Price - i.Appointment.Skill.Bonus - i.Appointment.Skill.Cost)
+                        : (i.TipAmount + i.Appointment.Skill.Bonus), // Her randevunun kazancını hesapla
+                    Date = i.Appointment.Date.ToString("yyyy-MM-dd"), // Tarih formatı
+                    EmployeeName = i.Appointment.Employee.Name // Çalışan adını ekle
+                }).ToList()
+            }).ToList();
+
+            // Eğer admin değilse Basic Wage'yi ekle
+            if (!isAdmin)
+            {
+                var employeeId = Int32.Parse(HttpContext.Session.GetString("EmployeeId"));
+                var employee = _context.Employees.FirstOrDefault(e => e.Id == employeeId); // Employee'yi veritabanından çekiyoruz
+
+                if (employee != null)
+                {
+                    foreach (var appointment in appointments)
+                    {
+                        appointment.KazancData.Add(new KazancDataViewModel
+                        {
+                            SkillName = "Basic Wage",
+                            Kazanc = employee.BasicWage // Basic Wage'yi ekle
+                        });
+                    }
+                }
+            }
+
+            return View("Dashboard/Index", appointments);
+        }
+
+        [HttpGet("chart-data")]
+        public IActionResult GetChartData()
+        {
+            // Kullanıcının rolünü kontrol edin
+            var isAdmin = HttpContext.Session.GetString("IsAdmin") == "true";
+            var employeeId = Int32.Parse(HttpContext.Session.GetString("EmployeeId"));
+
+            // Geçerli tarih bilgisi
+            var currentDate = DateTime.UtcNow;
+
+            // Randevu ve kazanç verilerini çekme
+            var appointmentsQuery = _context.Invoices
+                .Where(i => i.Appointment.Date >= currentDate.AddMonths(-12) && i.Appointment.Date <= currentDate);
+
+            // Eğer admin değilse sadece o anki employeeId'ye sahip olan randevuları al
+            if (!isAdmin)
+            {
+                appointmentsQuery = appointmentsQuery.Where(i => i.Appointment.Employee.Id == employeeId);
+            }
+
+            var chartData = appointmentsQuery
+                .GroupBy(i => new { Year = i.Appointment.Date.Year, Month = i.Appointment.Date.Month })
+                .Select(g => new
+                {
+                    MonthYear = new DateTime(g.Key.Year, g.Key.Month, 1).ToString("MMMM yyyy"),
+                    TotalIncome = isAdmin
+                        ? g.Sum(i => i.Appointment.Skill.Price) - g.Sum(i => i.Appointment.Skill.Bonus) - g.Sum(i => i.Appointment.Skill.Cost)
+                        : g.Sum(i => i.TipAmount) + g.Sum(i => i.Appointment.Skill.Bonus),
+                    KazancData = g.Select(i => new
+                    {
+                        SkillName = i.Appointment.Skill.Title,
+                        Kazanc = isAdmin
+                            ? (i.Appointment.Skill.Price - i.Appointment.Skill.Bonus - i.Appointment.Skill.Cost)
+                            : (i.TipAmount + i.Appointment.Skill.Bonus),
+                        Date = i.Appointment.Date.ToString("yyyy-MM-dd"),
+                        EmployeeName = i.Appointment.Employee.Name
+                    }).ToList()
                 })
                 .ToList();
 
-            ViewBag.AdminDetails = adminDetails;
+            // Eğer admin değilse Basic Wage'yi ekle
+            if (!isAdmin)
+            {
+                var employee = _context.Employees.FirstOrDefault(e => e.Id == employeeId); // Employee'yi veritabanından çekiyoruz
 
-            return View("Dashboard/Index");
+                if (employee != null)
+                {
+                    foreach (var chartItem in chartData)
+                    {
+                        chartItem.KazancData.Add(new
+                        {
+                            SkillName = "Basic Wage",
+                            Kazanc = employee.BasicWage, // Basic Wage'yi ekle
+                            Date = DateTime.UtcNow.ToString("yyyy-MM-dd"), // Tarih bilgisi ekle
+                            EmployeeName = employee.Name // Çalışan adını ekle
+                        });
+                    }
+                }
+            }
+
+            return Json(chartData);
         }
+
+
+
+
+
+
+
+
+
+
 
     }
 }

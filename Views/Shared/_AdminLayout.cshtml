@@ -1,5 +1,4 @@
-﻿@RenderSection("Scripts", required: false)
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -67,7 +66,7 @@
                 <ul>
                 @foreach (var error in TempData["Errors"].ToString().Split("<br>"))
                 {
-                            <li>@Html.Raw(error)</li>
+                        <li>@Html.Raw(error)</li>
                 }
                 </ul>
             </div>
@@ -147,5 +146,8 @@
             }, 3000);
         }
     </script>
+
+    @RenderSection("Script", required: false)
+    @RenderSection("Scripts", required: false) <!-- Burayı kontrol edin -->
 </body>
 </html>

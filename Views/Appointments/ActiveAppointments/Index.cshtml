@@ -7,6 +7,10 @@
 <div class="container mt-5">
     <h2 class="text-center">Aktif Randevularım</h2>
 
+    <div id="info-alert" class="alert alert-success d-none text-center" role="alert">
+        Sayfa <span id="countdown">3</span> saniye içinde yenilenecek.
+    </div>
+
     @if (Model == null || !Model.Any())
     {
         <div class="alert alert-info text-center">Aktif randevunuz bulunmamaktadır.</div>
@@ -17,19 +21,19 @@
             @foreach (var appointment in Model)
             {
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="card" id="appointment-@appointment.Id" data-id="@appointment.Id">
                         <div class="card-header">
                             <h5 class="card-title">Randevu: @appointment.Date.ToString("dd.MM.yyyy HH:mm")</h5>
                         </div>
                         <div class="card-body">
-                            <p><strong>Çalışan:</strong> @appointment.Employee.Name</p>
-                            <p><strong>Yetenek:</strong> @appointment.Skill.Title</p>
-                            <p><strong>Durum:</strong> @appointment.Status.Name</p>
+                            <p><strong>Çalışan:</strong> @appointment.Employee.Name @appointment.Employee.Surname</p>
+                            <p><strong>Model:</strong> @appointment.Skill.Title</p>
+                            <p><strong>Durum:</strong> @appointment.Status.Description</p>
                         </div>
                         <div class="card-footer text-right">
                             @if (appointment.Status.Name == "Request")
                             {
-                                <a href="@Url.Action("CancelAppointment", "Appointments")" class="btn btn-danger btn-sm">İptal Et</a>
+                                <button class="btn btn-danger btn-sm cancel-appointment" data-id="@appointment.Id">İptal Et</button>
                             }
                             else
                             {
@@ -46,3 +50,40 @@
         <a href="@Url.Action("BookAppointment", "CustomerAppointment")" class="btn btn-primary">Yeni Randevu Al</a>
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).on("click", ".cancel-appointment", function () {
+        const appointmentId = $(this).data("id");
+        const card = $("#appointment-" + appointmentId);
+
+        if (confirm("Bu randevuyu iptal etmek istediğinizden emin misiniz?")) {
+            $.ajax({
+                url: "/Appointments/CancelAppointment",
+                type: "POST",
+                data: { id: appointmentId },
+                success: function () {
+                    // Bilgi mesajını göster
+                    $("#info-alert").removeClass("d-none");
+
+                    let countdown = 3; // Başlangıç değeri
+                    const countdownElement = $("#countdown");
+
+                    // Kalan süreyi güncelleyen interval
+                    const interval = setInterval(function () {
+                        countdown--;
+                        countdownElement.text(countdown);
+
+                        if (countdown <= 0) {
+                            clearInterval(interval); // Interval'i durdur
+                            location.reload(); // Sayfayı yenile
+                        }
+                    }, 1000);
+                },
+                error: function () {
+                    alert("Randevu iptal edilirken bir hata oluştu. Lütfen tekrar deneyin.");
+                }
+            });
+        }
+    });
+</script>

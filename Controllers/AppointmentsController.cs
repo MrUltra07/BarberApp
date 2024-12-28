@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BarberApp.Controllers
 {
-	public class AppointmentsController : Controller
+	public class AppointmentsController : BaseController
 	{
 		private readonly AppDbContext _context;
 
-		public AppointmentsController(AppDbContext context)
+		public AppointmentsController(AppDbContext context) : base(context)
 		{
 			_context = context;
 		}

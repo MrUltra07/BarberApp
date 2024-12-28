@@ -5,11 +5,11 @@ using System.Linq;
 
 namespace BarberApp.Controllers
 {
-	public class SliderController : Controller
+	public class SliderController : BaseController
 	{
 		private readonly AppDbContext _context;
 
-		public SliderController(AppDbContext context)
+		public SliderController(AppDbContext context) : base(context)
 		{
 			_context = context;
 		}

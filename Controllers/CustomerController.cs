@@ -2,12 +2,13 @@
 using BarberApp.Models;
 using System.Linq;
 using Microsoft.AspNetCore.Identity;
+using BarberApp.Filters;
 
 
 namespace BarberApp.Controllers
 {
 
-	public class CustomerController : Controller
+	public class CustomerController : BaseController
 	{
 		private readonly AppDbContext _context;
 
@@ -17,12 +18,13 @@ namespace BarberApp.Controllers
 		}
 
 
-		public CustomerController(AppDbContext context)
+		public CustomerController(AppDbContext context) : base(context)
 		{
 			_context = context;
 		}
 
 		[HttpGet]
+		[RedirectIfAuthenticated]
 		public IActionResult Login()
 		{
 			if (IsUserLoggedIn())

@@ -7,13 +7,13 @@ using System.Globalization;
 
 namespace BarberApp.Controllers
 {
-    public class CustomerAppointmentController : Controller
+    public class CustomerAppointmentController : BaseController
     {
         private readonly AppDbContext _context;
         private readonly IHttpClientFactory _httpClientFactory;
 
-        public CustomerAppointmentController(AppDbContext context, IHttpClientFactory httpClientFactory)
-        {
+        public CustomerAppointmentController(AppDbContext context, IHttpClientFactory httpClientFactory) : base(context)
+		{
             _context = context;
             _httpClientFactory = httpClientFactory;
         }

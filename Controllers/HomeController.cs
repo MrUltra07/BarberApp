@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BarberApp.Controllers
 {
-	public class HomeController : Controller
+	public class HomeController : BaseController
 	{
 		private readonly ILogger<HomeController> _logger;
 		private readonly AppDbContext _context; // AppDbContext baðýmlýlýðý
 
-		public HomeController(ILogger<HomeController> logger, AppDbContext context)
+		public HomeController(ILogger<HomeController> logger, AppDbContext context) : base(context)
 		{
 			_logger = logger;
 			_context = context;
